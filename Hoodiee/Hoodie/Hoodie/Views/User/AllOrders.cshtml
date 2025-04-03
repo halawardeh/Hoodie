@@ -1,0 +1,75 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="clearfix userSection padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="list-inline squareBtn">
+                    <li class="li"><a asp-controller="User" asp-action="Profile" class="btn btn-common ">Profile</a></li>
+                    <li class="li"><a asp-controller="User" asp-action="AllOrders" class="btn btn-common btn-theme cursor-default">All Orders</a></li>
+                    <li class="li"><a asp-controller="User" asp-action="Wishlist" class="btn btn-common">Wishlist</a></li>
+                </ul>
+            </div>
+        </div>
+
+            <div class="row">
+    <div class="col-12">
+        <div class="innerWrapper">
+            <div class="orderBox  patternbg">
+                All Order
+            </div>
+
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Date</th>
+                            <th>Items</th>
+                            <th>Total Price</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>#451231</td>
+                            <td>Mar 25, 2016</td>
+                            <td>2</td>
+                            <td>$99.00</td>
+                            <td><a href="javascript:void(0)" class="btn btn-default">View</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>#451231</td>
+                            <td>Mar 25, 2016</td>
+                            <td>3</td>
+                            <td>$150.00</td>
+                            <td><a href="javascript:void(0)" class="btn btn-default">View</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>#451231</td>
+                            <td>Mar 25, 2016</td>
+                            <td>3</td>
+                            <td>$150.00</td>
+                            <td><a href="javascript:void(0)" class="btn btn-default">View</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>#451231</td>
+                            <td>Mar 25, 2016</td>
+                            <td>2</td>
+                            <td>$99.00</td>
+                            <td><a href="javascript:void(0)" class="btn btn-default">View</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</section>

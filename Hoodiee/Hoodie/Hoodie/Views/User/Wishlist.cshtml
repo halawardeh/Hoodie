@@ -1,0 +1,71 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ORDER SECTION -->
+<section class="clearfix orderSection padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <ul class="list-inline squareBtn">
+                    <li class="li"><a asp-controller="User" asp-action="Profile" class="btn btn-common ">Profile</a></li>
+                    <li class="li"><a asp-controller="User" asp-action="AllOrders" class="btn btn-common">All Orders</a></li>
+                    <li class="li"><a asp-controller="User" asp-action="Wishlist" class="btn btn-common btn-theme cursor-default">Wishlist</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <form>
+                    <div class="panel panel-default cartInfo">
+                        <div class="panel-heading patternbg">your Order</div>
+                        <div class="panel-body tableArea">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="single-product.html" class="cartImage"><img src="img/products/cart-product-1.jpg" data-src="img/products/cart-product-1.jpg" class="lazyestload" alt="Image cart"></a></td>
+
+                                            <td><a href="single-product.html">Lorem ipsum dolor sit consectetur.</a> <br> <span>Qnt: 1</span></td>
+                                            <td><span class="price">$79</span></td>
+
+                                            <td>
+                                                <a class="btn btn-common" href="cart.html">Add to Cart</a>
+                                            </td>
+
+                                            <td>
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><a href="single-product.html" class="cartImage"><img src="img/products/cart-product-2.jpg" data-src="img/products/cart-product-2.jpg" class="lazyestload" alt="Image cart"></a></td>
+
+                                            <td><a href="single-product.html">Lorem ipsum dolor sit consectetur.</a> <br> <span>Qnt: 1</span></td>
+                                            <td><span class="price">$79</span></td>
+
+                                            <td>
+                                                <a class="btn btn-common" href="cart.html">Add to Cart</a>
+                                            </td>
+
+                                            <td>
+                                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                    <span aria-hidden="true">×</span>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+ </div>
+</section>
+
