@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Wi8WQMSaGThCteAVOFQclFDIEhDAkeyMG8gO8YzO9Ro=",
+  "Hash": "YaU6Z8045/r0PYaQis79F3lzFQVL2JrAwdun0Qein3A=",
   "Source": "Hoodie",
   "BasePath": "_content/Hoodie",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "l7fh5buanx",
-      "Integrity": "Qfgu4ayTltsDYeJjdZ6s4xPPUAOlTBjmT388nxheW7E=",
+      "Fingerprint": "0u0n1njc1b",
+      "Integrity": "CA9bx8oAcuCfodE5fxR8uCo2CSTin9reW3jMReEcIEY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -6189,6 +6189,51 @@
       ]
     },
     {
+      "Route": "css/site.0u0n1njc1b.css",
+      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\css\\site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "165455"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CA9bx8oAcuCfodE5fxR8uCo2CSTin9reW3jMReEcIEY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 21:55:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0u0n1njc1b"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CA9bx8oAcuCfodE5fxR8uCo2CSTin9reW3jMReEcIEY="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -6199,7 +6244,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "162543"
+          "Value": "165455"
         },
         {
           "Name": "Content-Type",
@@ -6207,11 +6252,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Qfgu4ayTltsDYeJjdZ6s4xPPUAOlTBjmT388nxheW7E=\""
+          "Value": "\"CA9bx8oAcuCfodE5fxR8uCo2CSTin9reW3jMReEcIEY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 12:51:28 GMT"
+          "Value": "Thu, 03 Apr 2025 21:55:48 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6221,52 +6266,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Qfgu4ayTltsDYeJjdZ6s4xPPUAOlTBjmT388nxheW7E="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.l7fh5buanx.css",
-      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\css\\site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "162543"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Qfgu4ayTltsDYeJjdZ6s4xPPUAOlTBjmT388nxheW7E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 12:51:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "l7fh5buanx"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Qfgu4ayTltsDYeJjdZ6s4xPPUAOlTBjmT388nxheW7E="
+          "Value": "sha256-CA9bx8oAcuCfodE5fxR8uCo2CSTin9reW3jMReEcIEY="
         }
       ]
     },
@@ -6293,7 +6293,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 17:31:23 GMT"
+          "Value": "Thu, 03 Apr 2025 20:11:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6330,7 +6330,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 17:31:23 GMT"
+          "Value": "Thu, 03 Apr 2025 20:11:02 GMT"
         },
         {
           "Name": "Cache-Control",

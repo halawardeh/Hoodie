@@ -42,5 +42,10 @@ namespace Hoodie.Controllers
             return View();
         }
 
+        public IActionResult Order()
+        {
+            return View();
+        }
+
     }
 }

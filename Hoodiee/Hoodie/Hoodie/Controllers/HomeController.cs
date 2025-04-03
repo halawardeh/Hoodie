@@ -42,6 +42,15 @@ namespace Hoodie.Controllers
             return View();
         }
 
+        public IActionResult Hoodie()
+        {
+            return View();
+        }
+
+        public IActionResult Store()
+        {
+            return View();
+        }
 
         public IActionResult Error404(){
             
