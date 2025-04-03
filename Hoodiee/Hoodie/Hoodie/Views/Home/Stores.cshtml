@@ -1,0 +1,117 @@
+﻿@{
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js"></script>
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    <link href="~/css/Stores.css" rel="stylesheet" id="bootstrap-rtl" asp-append-version="true">
+
+
+}
+
+<!-- Hero -->
+<div id="banner" class="banner full-screen-mode parallax">
+    <video autoplay muted loop id="background-video">
+        <source src="https://videos.pexels.com/video-files/8322527/8322527-sd_960_506_25fps.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+    </div>
+
+
+<section class="stores-container">
+    <nav class="stores-header">
+        <div class="stores-content">
+            <br><br>
+            <h2>Lova Stores</h2>
+            <div class="store-search-box">
+                <input type="text" id="storeSearchInput" placeholder="Search for stores...">
+                <button id="storeSearchButton"><i class="fas fa-search"></i></button>
+            </div><br>
+        </div>
+    </nav>
+    <br>
+    <div class="store-filters">
+        <button class="store-filter-btn" data-category="all">All</button>
+        <button class="store-filter-btn" data-category="men">Men</button>
+        <button class="store-filter-btn" data-category="women">Women</button>
+        <button class="store-filter-btn" data-category="kids">Kids</button>
+    </div>
+
+    <div class="stores-list">
+        <div class="store-card" data-category="men">
+            <img src="https://i.pinimg.com/736x/c7/e6/b8/c7e6b84f1a8bfd6d4e0f2075118452a1.jpg" alt="Store 1">
+            <h3>Urban Men's Wear</h3>
+            <p>Formal, Casual, Sportswear</p>
+            <p class="location">📍 Downtown</p>
+        </div>
+        <div class="store-card" data-category="women">
+            <img src="https://i.pinimg.com/474x/d7/57/cb/d757cb45cb31192aebdae013ec52a0ea.jpg" alt="Store 2">
+            <h3>Elegant Women's Boutique</h3>
+            <p>Dresses, Office Wear, Casual</p>
+            <p class="location">📍 City Mall</p>
+        </div>
+        <div class="store-card" data-category="kids">
+            <img src="https://i.pinimg.com/736x/e1/45/58/e14558c24934004d61e50e6decc730a8.jpg" alt="Store 3">
+            <h3>Kids' Wonderland</h3>
+            <p>Playwear, Party Outfits, School Attire</p>
+            <p class="location">📍 Uptown</p>
+        </div>
+        <div class="store-card" data-category="kids">
+            <img src="https://i.pinimg.com/236x/cb/c4/50/cbc4500666a1f8ed218f65be03387d8f.jpg" alt="Store 3">
+            <h3>Mini Styles</h3>
+            <p>Everyday Wear, Fancy Dresses, Accessories</p>
+            <p class="location">📍 Uptown</p>
+        </div>
+        <div class="store-card" data-category="men">
+            <img src="https://i.pinimg.com/474x/ac/83/c0/ac83c0f873c0dae28504944971fba7c9.jpg" alt="Store 1">
+            <h3>Classic Men's Hub</h3>
+            <p>Suiting, Casual, Footwear</p>
+            <p class="location">📍 Downtown</p>
+        </div>
+        <div class="store-card" data-category="women">
+            <img src="https://i.pinimg.com/236x/3e/7d/7e/3e7d7e3e95555fd14c83441bfc233ff4.jpg" alt="Store 2">
+            <h3>Trendy Women's Fashion</h3>
+            <p>Boho, Elegant, Streetwear</p>
+            <p class="location">📍 City Mall</p>
+        </div>
+        <div class="store-card" data-category="kids">
+            <img src="https://i.pinimg.com/236x/b6/56/a8/b656a8e7541cef78bb45ffd81aadec84.jpg" alt="Store 3">
+            <h3>Junior Trends</h3>
+            <p>Casual, Themed Outfits, Shoes</p>
+            <p class="location">📍 Uptown</p>
+        </div>
+        <div class="store-card" data-category="kids">
+            <img src="https://i.pinimg.com/474x/b0/bd/41/b0bd41aa11771df141184a775d66c12b.jpg" alt="Store 3">
+            <h3>Happy Kids Shop</h3>
+            <p>Summer, Winter, Accessories</p>
+            <p class="location">📍 Uptown</p>
+        </div>
+        <div class="store-card" data-category="men">
+            <img src="https://i.pinimg.com/474x/db/48/bf/db48bf5db4aa46aa742c95125f6d0291.jpg" alt="Store 1">
+            <h3>Modern Men's Collection</h3>
+            <p>Office Wear, Streetwear, Jackets</p>
+            <p class="location">📍 Downtown</p>
+        </div>
+        <div class="store-card" data-category="women">
+            <img src="https://i.pinimg.com/236x/63/37/1b/63371bce266a5c9de189ff73d15e9738.jpg" alt="Store 2">
+            <h3>Luxury Women's Attire</h3>
+            <p>Formal, Party Wear, Accessories</p>
+            <p class="location">📍 City Mall</p>
+        </div>
+        <div class="store-card" data-category="kids">
+            <img src="https://i.pinimg.com/474x/1d/6d/5c/1d6d5c9fb46604a4911d93f321147374.jpg" alt="Store 3">
+            <h3>Little Stars</h3>
+            <p>Sportswear, Cozy Winter Wear</p>
+            <p class="location">📍 Uptown</p>
+        </div>
+        <div class="store-card" data-category="kids">
+            <img src="https://i.pinimg.com/474x/db/48/bf/db48bf5db4aa46aa742c95125f6d0291.jpg" alt="Store 3">
+            <h3>Charming Kids Fashion</h3>
+            <p>Trendy, Daily Wear, Accessories</p>
+            <p class="location">📍 Uptown</p>
+        </div>
+    </div>
+
+</section>
+<script src="~/js/stores.js" asp-append-version="true"></script>
+

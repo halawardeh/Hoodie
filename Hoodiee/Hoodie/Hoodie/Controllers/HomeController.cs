@@ -28,7 +28,25 @@ namespace Hoodie.Controllers
             return View();
         }
 
+        public IActionResult Stores()
+        {
+            return View();
+        }
 
+        public IActionResult ProductDetails()
+        {
+            return View();
+        }
+        public IActionResult Category()
+        {
+            return View();
+        }
+
+
+        public IActionResult Error404(){
+            
+            return View();
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -9,73 +9,93 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hoodie
 build_property.RootNamespace = Hoodie
-build_property.ProjectDir = C:\Users\Orange\Desktop\Hoodie\Hoodie\Hoodie\
+build_property.ProjectDir = C:\Users\Orange\Desktop\Hoodie\Hoodiee\Hoodie\Hoodie\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Orange\Desktop\Hoodie\Hoodie\Hoodie
+build_property.MSBuildProjectDirectory = C:\Users\Orange\Desktop\Hoodie\Hoodiee\Hoodie\Hoodie
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/Home/About.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/Home/Contact.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Home/Category.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb250YWN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/Home/Index.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Home/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvcjQwNC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/Shared/Error.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Home/ProductDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Home/Stores.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdG9yZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/User/AllOrders.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/AllOrders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBbGxPcmRlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/User/Cart.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/Cart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDYXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/User/EditProfile.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDaGVja291dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/EditProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0UHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/User/Login.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/User/Profile.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/User/SignUp.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/User/Wishlist.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/Wishlist.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxXaXNobGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/_ViewImports.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/_ViewStart.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodie/Hoodie/Views/Shared/_Layout.cshtml]
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-deotztngdv

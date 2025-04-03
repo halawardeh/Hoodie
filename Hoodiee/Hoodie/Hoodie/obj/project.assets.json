@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodie\\Hoodie\\Hoodie.csproj",
+      "projectUniqueName": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Hoodie.csproj",
       "projectName": "Hoodie",
-      "projectPath": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodie\\Hoodie\\Hoodie.csproj",
+      "projectPath": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Hoodie.csproj",
       "packagesPath": "C:\\Users\\Orange\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodie\\Hoodie\\obj\\",
+      "outputPath": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
