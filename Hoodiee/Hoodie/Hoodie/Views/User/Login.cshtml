@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Hoodie.Models.User
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <!-- FORM AREA SECTION -->
@@ -9,23 +11,23 @@
                 <div class="panel panel-default formPart">
                     <div class="panel-heading patternbg">log in your <span>account</span></div>
                     <div class="panel-body">
-                        <form>
+                        <form asp-action="handleLogin">
                             <div class="form-group">
                                 <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                <input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
                             </div>
 
                             <div class="form-group">
                                 <i class="fa fa-lock" aria-hidden="true"></i>
-                                <input type="password" class="form-control" id="pwd" placeholder="Password">
+                                <input name="password" type="password" class="form-control" id="pwd" placeholder="Password">
                             </div>
 
-                            <div class="checkbox form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck0">
-                                <label class="form-check-label" for="defaultCheck0">
-                                    Remember me
-                                </label>
-                            </div>
+                            @* <div class="checkbox form-check"> *@
+                            @*     <input class="form-check-input" type="checkbox" value="" id="defaultCheck0"> *@
+                            @*     <label class="form-check-label" for="defaultCheck0"> *@
+                            @*         Remember me *@
+                            @*     </label> *@
+                            @* </div> *@
 
                             <button type="submit" class="btn btn-primary btn-block">Log In</button>
                         </form>

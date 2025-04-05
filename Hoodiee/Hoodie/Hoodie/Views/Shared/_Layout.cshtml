@@ -1,6 +1,9 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿@{
+    var email = Context.Session.GetString("email");
+}
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -77,12 +80,31 @@
                     <li class="nav-item ">
                         <a class="nav-link dropdown-toggle" asp-controller="Home" asp-action="Contact">Contact Us</a>
                     </li>
+                    @if(string.IsNullOrEmpty(email)){
+                        <li class="nav-item ">
+                            <a class="nav-link dropdown-toggle" asp-controller="User" asp-action="SignUp">sign up</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link dropdown-toggle" asp-controller="User" asp-action="Login">Login</a>
+                        </li>
+                    } 
 
                 </ul>
             </div>
-            <div class="cart_btn">
-                <a asp-controller="User" asp-action="Profile"><i class="fa fa-user profile-icon" aria-hidden="true"></i><span class="badge"></span></a>
-            </div>
+            @if (!string.IsNullOrEmpty(email)){
+                <div class="cart_btn">
+                    <a asp-controller="User" asp-action="Logout">
+                        <i class="fa fa-sign-out profile-icon" aria-hidden="true"></i>
+                        <span class="badge"></span>
+                    </a>
+                </div>
+                <div class="cart_btn">
+                    <a asp-controller="User" asp-action="Profile">
+                        <i class="fa fa-user profile-icon" aria-hidden="true"></i>
+                        <span class="badge"></span></a>
+                </div>
+            }
+           
             <div class="cart_btn">
                 <a asp-controller="User" asp-action="Wishlist"><i class="fa fa-heart favorite-icon" aria-hidden="true"></i><span class="badge"></span></a>
             </div>

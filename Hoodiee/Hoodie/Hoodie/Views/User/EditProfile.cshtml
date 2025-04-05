@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Hoodie.Models.User
+
+@{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -24,61 +26,50 @@
 
                     <div class="profile">
                         <div class="row">
-                            <div class="col-md-3 col-xl-2">
-                                <div class="thumbnail">
-                                    <img class="lazyestload" data-src="img/home/team-1.jpg" src="img/home/team-1.jpg" alt="profile-image">
-                                   <div class="caption">
-                                      <div  class="imagediv">
-                                        <span class="visibleimg"></span>
-                                        <span class="showonhover">Change Avatar</span>
-                                        <input id="selectfile" type="file" name="" style="display: none;" />
-                                      </div>
-                                    </div> 
-                                </div>
-                            </div>
+                            @* <div class="col-md-3 col-xl-2"> *@
+                            @*     <div class="thumbnail"> *@
+                            @*         <img class="lazyestload" data-src="img/home/team-1.jpg" src="img/home/team-1.jpg" alt="profile-image"> *@
+                            @*        <div class="caption"> *@
+                            @*           <div  class="imagediv"> *@
+                            @*             <span class="visibleimg"></span> *@
+                            @*             <span class="showonhover">Change Avatar</span> *@
+                            @*             <input id="selectfile" type="file" name="" style="display: none;" /> *@
+                            @*           </div> *@
+                            @*         </div>  *@
+                            @*     </div> *@
+                            @* </div> *@
 
                             <div class="col-md-9 col-xl-10">
-                                <form class="form-horizontal">
+                                <form class="form-horizontal" asp-controller="User" asp-action="EditProfile" method="post">
                                     <div class="form-group row">
-                                        <label class="col-md-4 col-xl-2 control-label text-md-right">Full Name</label>
+                                        <label class="col-md-4 col-xl-2 control-label text-md-right">First Name</label>
                                         <div class="col-md-8 col-xl-10">
-                                            <input type="text" class="form-control" required="" placeholder="Enter Your Fast Name">
+                                            <input type="text" class="form-control" name="fname" value="@Model.Fname">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label class="col-md-4 col-xl-2 control-label text-md-right">Last Name</label>
+                                        <div class="col-md-8 col-xl-10">
+                                            <input type="text" class="form-control" name="lname" value="@Model.Lname">
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
                                         <label class="col-md-4 col-xl-2 control-label text-md-right">Phone Number</label>
                                         <div class="col-md-8 col-xl-10">
-                                            <input type="text" class="form-control" placeholder="Enter Your Phone no">
+                                            <input type="text" class="form-control" name="phoneNumber" value="@Model.Phonenumber">
                                         </div>
                                     </div>
 
                                     <div class="form-group row">
                                         <label class="col-md-4 col-xl-2 control-label text-md-right">Email Address</label>
                                         <div class="col-md-8 col-xl-10">
-                                            <input type="email" class="form-control" placeholder="Enter Your Email Address">
+                                            <input type="email" class="form-control" name="email" value="@Model.Email">
                                         </div>
                                     </div>
 
-                                    <div class="form-group row">
-                                      <label class="col-md-4 col-xl-2 control-label text-md-right">Password</label>
-                                      <div class="col-md-8 col-xl-10">
-                                        <input type="password" class="form-control"  placeholder="Enter Password">
-                                      </div>
-                                    </div>
-
-                                    <div class="form-group row">
-                                      <label class="col-md-4 col-xl-2 control-label text-md-right">New Password</label>
-                                      <div class="col-md-8 col-xl-10">
-                                        <input type="password" class="form-control" placeholder="Enter New Password">
-                                      </div>
-                                    </div>
-
-                                    <div class="form-group row justify-content-md-end">
-                                        <div class="col-lg-offset-10 col-xl-2 col-offset-9 col-md-3">
-                                            <button type="submit" class="btn btn-primary btn-block">Edit Profile</button>
-                                        </div>
-                                    </div>
+                                    <button type="submit" class="btn btn-primary mt-3">Save Changes</button>
                                 </form>
                             </div>
                         </div>

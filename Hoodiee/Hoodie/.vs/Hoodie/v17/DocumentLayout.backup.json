@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\user\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\user\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\user\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\user\\editprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\user\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\user\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\user\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\user\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\home\\stores.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -39,24 +75,8 @@
       "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\user\\cart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\user\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\user\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\user\\signup.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\home\\store.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -69,14 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\wwwroot\\css\\productdetails.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -99,10 +111,6 @@
       "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\views\\user\\wishlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodie\\Hoodie\\Views\\Home\\\u0650About1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -114,6 +122,10 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodie\\Hoodie\\Views\\Home\\Index1.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|c:\\users\\orange\\desktop\\hoodie\\hoodiee\\hoodie\\hoodie\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E87D07B-E2E6-4DC4-AAA6-1E768E789F30}|Hoodie\\Hoodie.csproj|solutionrelative:hoodie\\models\\mydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -123,19 +135,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 19,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Hoodie\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Models\\User.cs",
+              "RelativeToolTip": "Hoodie\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T12:37:11.833Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\appsettings.json",
+              "RelativeDocumentMoniker": "Hoodie\\appsettings.json",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\appsettings.json",
+              "RelativeToolTip": "Hoodie\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-04T12:22:49.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "MyDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Models\\MyDbContext.cs",
+              "RelativeDocumentMoniker": "Hoodie\\Models\\MyDbContext.cs",
+              "ToolTip": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Models\\MyDbContext.cs",
+              "RelativeToolTip": "Hoodie\\Models\\MyDbContext.cs",
+              "ViewState": "AgIAADoBAAAAAAAAAAApwEcBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T12:21:56.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "Order.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\Order.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\User\\Order.cshtml",
@@ -143,12 +183,11 @@
               "RelativeToolTip": "Hoodie\\Views\\User\\Order.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T21:57:15.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T21:57:15.661Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "Store.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\Home\\Store.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\Home\\Store.cshtml",
@@ -156,12 +195,11 @@
               "RelativeToolTip": "Hoodie\\Views\\Home\\Store.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAOIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T19:05:26.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T19:05:26.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Hoodie.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\Home\\Hoodie.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\Home\\Hoodie.cshtml",
@@ -169,12 +207,11 @@
               "RelativeToolTip": "Hoodie\\Views\\Home\\Hoodie.cshtml",
               "ViewState": "AgIAADwAAAAAAAAAAAAAAFEAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T18:37:01.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T18:37:01.119Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 22,
               "Title": "ProductDetails.css",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\css\\ProductDetails.css",
               "RelativeDocumentMoniker": "Hoodie\\wwwroot\\css\\ProductDetails.css",
@@ -186,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "ProductDetails.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\Home\\ProductDetails.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\Home\\ProductDetails.cshtml",
@@ -194,12 +231,11 @@
               "RelativeToolTip": "Hoodie\\Views\\Home\\ProductDetails.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T17:08:01.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T17:08:01.555Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Error404.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\Home\\Error404.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\Home\\Error404.cshtml",
@@ -211,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "Stores.css",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\css\\Stores.css",
               "RelativeDocumentMoniker": "Hoodie\\wwwroot\\css\\Stores.css",
@@ -219,12 +255,11 @@
               "RelativeToolTip": "Hoodie\\wwwroot\\css\\Stores.css",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-03T15:55:46.304Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T15:55:46.304Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "default.css",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\css\\default.css",
               "RelativeDocumentMoniker": "Hoodie\\wwwroot\\css\\default.css",
@@ -236,7 +271,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Stores.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\Home\\Stores.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\Home\\Stores.cshtml",
@@ -244,25 +279,23 @@
               "RelativeToolTip": "Hoodie\\Views\\Home\\Stores.cshtml",
               "ViewState": "AgIAAF8AAAAAAAAAAAAAAG8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T15:52:21.083Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T15:52:21.083Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "Checkout.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\Checkout.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\User\\Checkout.cshtml",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\Checkout.cshtml",
               "RelativeToolTip": "Hoodie\\Views\\User\\Checkout.cshtml",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAcwGUAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T15:49:20.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T15:49:20.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "AllOrders.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\AllOrders.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\User\\AllOrders.cshtml",
@@ -270,64 +303,59 @@
               "RelativeToolTip": "Hoodie\\Views\\User\\AllOrders.cshtml",
               "ViewState": "AgIAACEAAAAAAAAAAAAAABEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T14:44:47.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T14:44:47.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EditProfile.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\EditProfile.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\User\\EditProfile.cshtml",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\EditProfile.cshtml",
               "RelativeToolTip": "Hoodie\\Views\\User\\EditProfile.cshtml",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAABwAAABHAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAEgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T14:29:35.948Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T14:29:35.948Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 3,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\Profile.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\User\\Profile.cshtml",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\Profile.cshtml",
               "RelativeToolTip": "Hoodie\\Views\\User\\Profile.cshtml",
-              "ViewState": "AgIAABwAAAAAAAAAAAAswEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T14:25:44.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T14:25:44.854Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "Login.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\Login.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\User\\Login.cshtml",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\Login.cshtml",
               "RelativeToolTip": "Hoodie\\Views\\User\\Login.cshtml",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAswBUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T14:24:48.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T14:24:48.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 6,
               "Title": "SignUp.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\SignUp.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\User\\SignUp.cshtml",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\SignUp.cshtml",
               "RelativeToolTip": "Hoodie\\Views\\User\\SignUp.cshtml",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAswBoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T14:24:02.153Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T14:24:02.153Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "Cart.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\Cart.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\User\\Cart.cshtml",
@@ -335,25 +363,24 @@
               "RelativeToolTip": "Hoodie\\Views\\User\\Cart.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T14:22:55.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T14:22:55.29Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Hoodie\\Controllers\\UserController.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Controllers\\UserController.cs",
               "RelativeToolTip": "Hoodie\\Controllers\\UserController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAywCwAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAlwE0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T14:22:03.77Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Wishlist.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\User\\Wishlist.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\User\\Wishlist.cshtml",
@@ -365,19 +392,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Program.cs",
               "RelativeDocumentMoniker": "Hoodie\\Program.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Program.cs",
               "RelativeToolTip": "Hoodie\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T13:39:44.131Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\Home\\Contact.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\Home\\Contact.cshtml",
@@ -389,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "\u0650About1.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodie\\Hoodie\\Views\\Home\\\u0650About1.cshtml",
               "RelativeDocumentMoniker": "..\\..\\Hoodie\\Hoodie\\Views\\Home\\\u0650About1.cshtml",
@@ -400,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "Index1.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodie\\Hoodie\\Views\\Home\\Index1.cshtml",
               "RelativeDocumentMoniker": "..\\..\\Hoodie\\Hoodie\\Views\\Home\\Index1.cshtml",
@@ -412,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "About - Copy.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodie\\Hoodie\\Views\\Home\\About - Copy.cshtml",
               "RelativeDocumentMoniker": "..\\..\\Hoodie\\Hoodie\\Views\\Home\\About - Copy.cshtml",
@@ -424,20 +451,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Hoodie\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Controllers\\HomeController.cs",
               "RelativeToolTip": "Hoodie\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAADEAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T11:59:58.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T11:59:58.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "About.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\Home\\About.cshtml",
@@ -445,12 +471,11 @@
               "RelativeToolTip": "Hoodie\\Views\\Home\\About.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T11:54:41.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T11:54:41.926Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\Home\\Index.cshtml",
@@ -458,25 +483,23 @@
               "RelativeToolTip": "Hoodie\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAIgAAAAAAAAAAAAAAKIAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T11:50:55.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T11:50:55.008Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Hoodie\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Hoodie\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAEQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-03T11:21:57.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T11:21:57.405Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "Hoodie\\wwwroot\\js\\site.js",
@@ -488,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "Hoodie\\wwwroot\\css\\site.css",
@@ -496,8 +519,7 @@
               "RelativeToolTip": "Hoodie\\wwwroot\\css\\site.css",
               "ViewState": "AgIAANAgAAAAAAAAAAAowOggAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-03T11:16:25.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T11:16:25.608Z"
             }
           ]
         }
