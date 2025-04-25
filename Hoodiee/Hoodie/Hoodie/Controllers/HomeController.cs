@@ -1,21 +1,23 @@
 using System.Diagnostics;
 using Hoodie.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Hoodie.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly HoodieContext _context;
+        public HomeController(HoodieContext context)
         {
-            _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var categories = this._context.Categories.Where(cat => cat.StoreId == null).ToList();
+            return View(categories);
         }
 
         public IActionResult About()
@@ -28,12 +30,28 @@ namespace Hoodie.Controllers
             return View();
         }
 
-        public IActionResult Stores()
+        [HttpPost]
+        public IActionResult Contact(Message msg)
         {
-            return View();
+            var newMessage = new Message
+            {
+                UserName = msg.UserName,
+                Email = msg.Email,
+                PhoneNumber = msg.PhoneNumber,
+                Messagee = msg.Messagee,
+                CreatedAt = DateTime.Now
+            };
+
+            _context.Add(newMessage);
+            _context.SaveChanges();
+
+            TempData["Message"] = "Message sent successfully!";
+            return RedirectToAction("Contact");
+
         }
 
-        public IActionResult ProductDetails()
+
+        public IActionResult Stores()
         {
             return View();
         }
@@ -52,15 +70,17 @@ namespace Hoodie.Controllers
             return View();
         }
 
-        public IActionResult Error404(){
-            
+        public IActionResult Error404()
+        {
+
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+
+        //[ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        //public IActionResult Error()
+        //{
+        //    return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        //}
     }
 }

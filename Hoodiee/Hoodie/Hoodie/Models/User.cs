@@ -27,6 +27,8 @@ public partial class User
 
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
+    public virtual ICollection<Checkout> Checkouts { get; set; } = new List<Checkout>();
+
     public virtual ICollection<Notification> Notifications { get; set; } = new List<Notification>();
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
@@ -35,5 +37,5 @@ public partial class User
 
     public virtual ICollection<Store> Stores { get; set; } = new List<Store>();
 
-    public virtual ICollection<Product> Products { get; set; } = new List<Product>();
+    public virtual ICollection<Wishlist> Wishlists { get; set; } = new List<Wishlist>();
 }

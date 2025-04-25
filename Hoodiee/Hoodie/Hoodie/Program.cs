@@ -1,3 +1,4 @@
+//using Hoodie.Models;
 using Hoodie.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,10 +7,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddDistributedMemoryCache();
+
 // Add session services
 builder.Services.AddSession();
 
-builder.Services.AddDbContext<MyDbContext>(options =>
+builder.Services.AddDbContext<HoodieContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MyConnectionString")));
 
 var app = builder.Build();

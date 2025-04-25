@@ -24,24 +24,31 @@
 
                 <div class="contactForm">
                     <div id="alert"></div><!--Response Holder-->
-                    <form action="https://themes.iamabdus.com/angel/1.2/mail/contact-form.php" id="angelContactForm" method="post">
+                    <form asp-controller="Home" asp-action="Contact" id="angelContactForm" method="post">
                         <div class="form-group">
-                            <input type="text" name="contact-form-name" class="form-control" placeholder="Your Name" required>
+                            <input type="text" name="UserName" class="form-control" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="contact-form-email" class="form-control" placeholder="Your Email" required>
+                            <input type="email" name="Email" class="form-control" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="contact-form-mobile" class="form-control" placeholder="Your Mobile" required>
+                            <input type="text" name="PhoneNumber" class="form-control" placeholder="Your Mobile" required>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="contact-form-message" placeholder="Your Message" required></textarea>
+                            <textarea class="form-control" name="Messagee" placeholder="Your Message" required></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit" id="contact-submit-btn" class="btn btn-primary first-btn">send Message</button>
+                            <button type="submit" id="contact-submit-btn" class="btn btn-primary first-btn">Send Message</button>
 
                         </div>
                     </form>
+                    @if (TempData["Message"] != null)
+                    {
+                        <div class="alert alert-success">
+                            @TempData["Message"]
+                        </div>
+                    }
+
                 </div>
             </div>
 
@@ -59,4 +66,3 @@
     </div>
 </section>
 
-  </div>

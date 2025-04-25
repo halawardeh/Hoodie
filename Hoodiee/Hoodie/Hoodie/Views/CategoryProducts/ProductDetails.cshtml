@@ -1,0 +1,196 @@
+﻿@model Product
+
+@{
+	<link href="~/css/ProductDetails.css" rel="stylesheet" />
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	var productUrl = Url.Action("Details", "Product", new { id = Model.ProductId }, protocol: "https");
+	var message = $"Check out this product: {productUrl}";
+	var whatsappLink = $"https://wa.me/?text={Uri.EscapeDataString(message)}";
+}
+
+<!-- product-details -->
+<div class="main-container" style="margin-top:3vw">
+	<div class="product-overview">
+		<div class="image-section">
+			<img src="https://i.pinimg.com/474x/2f/f9/4e/2ff94e0046fd38ef541cfb2a8d42f29d.jpg" data-src="https://i.pinimg.com/474x/2f/f9/4e/2ff94e0046fd38ef541cfb2a8d42f29d.jpg" alt="Image Product" class="img-responsive lazyestload">
+
+		</div>
+		<div class="details-section">
+			<br /><br />
+			<h1>@Model.Name</h1>
+			<p style="color: gray;">
+				@Model.Description
+			</p>
+			<div class="twoParts">
+				<p class="product-price" style="font-weight: bold;">@Model.Price JD</p>
+				@if (Model.Availability == true)
+				{
+					<p><b> Avilability: </b><span class="stock-status"> IN STOCK</span></p>
+				}
+				else
+				{
+					<p><b> Avilability: </b><span class="stock-status"> Not Avialable</span></p>
+				}
+
+			</div>
+
+
+			<div class="twoParts">
+
+				<p>
+					<b>Choose Your Size:</b>
+					<span class="size-choices">
+						@foreach (var size in Model.ProductSizes)
+						{
+							var isSelected = (ViewBag.SelectedsizeId != null && size.SizeId == (int)ViewBag.SelectedsizeId);
+							var selectedClass = isSelected ? "size-option selected" : "size-option";
+
+							<a asp-action="GetProductBySize"
+							   asp-route-productId="@Model.ProductId"
+							   asp-route-sizeId="@size.SizeId"
+							   class="@selectedClass">
+								@size.Size.SizeName
+							</a>
+						}
+					</span>
+
+				</p>
+
+				<p>
+					Color:
+					<span class="color-choices">
+						@foreach (var color in Model.ProductColors)
+						{
+							var isSelected = (ViewBag.SelectedColorId != null && color.ColorId == (int)ViewBag.SelectedColorId);
+
+							<a asp-action="GetProductByColor"
+							   asp-route-productId="@Model.ProductId"
+							   asp-route-colorId="@color.ColorId"
+							   title="@color.Color.Name">
+								<span style="background-color: @color.Color.HexCode;
+                     border: 2px solid @(isSelected ? "#ff0000" : "#ec5598");
+                     display:inline-block;
+                     width:20px;
+                     height:20px;
+                     border-radius:50%;
+                     margin-right:5px;">
+								</span>
+							</a>
+						}
+
+
+					</span>
+				</p>
+
+				<div class="action-buttons">
+					<form asp-controller="User" asp-action="Cart" method="post">
+						<input type="hidden" name="productID" value="@Model.ProductId" />
+						<button style="font-size: medium;">
+							Add to cart
+						</button>
+					</form>
+					<form asp-controller="User" asp-action="AddToWishlist" method="post">
+						<input type="hidden" name="productID" value="@Model.ProductId" />
+						<button style="font-size: medium;">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								 class="bi bi-heart" viewBox="0 0 16 16">
+								<path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z">
+								</path>
+							</svg>
+						</button>
+					</form>
+				</div>
+
+				@* <p> *@
+				@*     <b> Qty: </b> *@
+				@*     <span class="qty-input"> *@
+				@*         <button class="qty-count qty-count--minus" data-action="minus" type="button">-</button> *@
+				@*         <input class="product-qty" type="number" name="product-qty" min="0" max="10" value="1"> *@
+				@*         <button class="qty-count qty-count--add" data-action="add" type="button">+</button> *@
+				@*     </span> *@
+				@* </p> *@
+			</div>
+
+			@*  //============================Color======================
+*@
+
+			@*  //============================Share======================
+ *@       
+
+	<div class="twoParts">
+				<a href="@whatsappLink" target="_blank" style="text-decoration: none; color: inherit;">
+					<p><img src="~/Img/img1/share.png" alt="Share Icon" style="width: 20px; height: 20px;"> Share</p>
+				</a>
+			</div>
+		</div>
+	</div>
+	@*  //============================Review======================
+*@
+	<div class="reviews-section">
+		<div class="review">
+			<h3>
+				Reviews (10)</h2>
+				<h3>View All</h2>
+		</div>
+
+		<div class="individual-review">
+			<div class="threeParts">
+				<p><strong>A**** *****1</strong> </p>
+				<div class="rating-info">
+					⭐⭐⭐⭐⭐
+				</div>
+				<p>2024-12-21</p>
+			</div>
+			<p style="color: gray;">Color: white / Size: medium</p>
+			<p style="line-height: 40px;">So beautiful!</p>
+			<div class="twoParts3">
+				<div>
+					<img src="~/Img/img1/rw1.png" alt="Review Image">
+				</div>
+
+				<span class="helpful-text">
+					<span>
+						<img style="height: 27px; width: auto;" src="/img1/Like.png"
+							 alt="">
+					</span> Helpful (15)
+				</span>
+			</div>
+		</div>
+
+		<div class="individual-review">
+			<div class="threeParts">
+				<p><strong>A**** *****1</strong></p>
+				<div class="rating-info">
+					⭐⭐⭐⭐⭐ </span>
+				</div>
+				<p>2024-12-21</p>
+			</div>
+			<p style="color: gray;">Color: white / Size: small</p>
+			<p style="line-height: 40px;">Small! I will back it</p>
+			<div class="twoParts3">
+
+				<div>
+					<img src="~/Img/img1/rw1.png" alt="Review Image">
+				</div>
+				<span class="helpful-text">
+					<span>
+						<img style="height: 27px; width: auto;" src="/img1/Like.png"
+							 alt="">
+					</span> Helpful (15)
+				</span>
+			</div>
+
+		</div>
+		<!-- show more -->
+		<div class="action-buttons" class="showMore" style="justify-content: center; column-gap: unset;">
+			<button style="font-size: medium; width: 10vw;">Show More </button>
+
+		</div>
+
+
+
+
+	</div>
+
+</div>
+

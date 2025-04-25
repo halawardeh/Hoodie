@@ -21,10 +21,6 @@ public partial class Product
 
     public bool? Availability { get; set; }
 
-    public string? Color { get; set; }
-
-    public string? Size { get; set; }
-
     public string? Image { get; set; }
 
     public int? StoreId { get; set; }
@@ -39,11 +35,15 @@ public partial class Product
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 
+    public virtual ICollection<ProductColor> ProductColors { get; set; } = new List<ProductColor>();
+
+    public virtual ICollection<ProductSize> ProductSizes { get; set; } = new List<ProductSize>();
+
     public virtual ICollection<Review> Reviews { get; set; } = new List<Review>();
 
     public virtual Store? Store { get; set; }
 
-    public virtual ICollection<Tag> Tags { get; set; } = new List<Tag>();
+    public virtual ICollection<Wishlist> Wishlists { get; set; } = new List<Wishlist>();
 
-    public virtual ICollection<User> Users { get; set; } = new List<User>();
+    public virtual ICollection<Tag> Tags { get; set; } = new List<Tag>();
 }

@@ -4,7 +4,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!-- USER SECTION -->
 <section class="clearfix userSection padding">
     <div class="container">
         <div class="row">
@@ -26,18 +25,7 @@
 
                     <div class="profile">
                         <div class="row">
-                            @* <div class="col-md-3 col-xl-2"> *@
-                            @*     <div class="thumbnail"> *@
-                            @*         <img class="lazyestload" data-src="img/home/team-1.jpg" src="img/home/team-1.jpg" alt="profile-image"> *@
-                            @*        <div class="caption"> *@
-                            @*           <div  class="imagediv"> *@
-                            @*             <span class="visibleimg"></span> *@
-                            @*             <span class="showonhover">Change Avatar</span> *@
-                            @*             <input id="selectfile" type="file" name="" style="display: none;" /> *@
-                            @*           </div> *@
-                            @*         </div>  *@
-                            @*     </div> *@
-                            @* </div> *@
+                           
 
                             <div class="col-md-9 col-xl-10">
                                 <form class="form-horizontal" asp-controller="User" asp-action="EditProfile" method="post">
@@ -65,7 +53,7 @@
                                     <div class="form-group row">
                                         <label class="col-md-4 col-xl-2 control-label text-md-right">Email Address</label>
                                         <div class="col-md-8 col-xl-10">
-                                            <input type="email" class="form-control" name="email" value="@Model.Email">
+                                            <input type="email" class="form-control" name="email" value="@Model.Email" disabled>
                                         </div>
                                     </div>
 

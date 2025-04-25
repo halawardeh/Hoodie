@@ -1,5 +1,7 @@
-﻿@{
+﻿@model List<Order>
+@{
 	Layout = "~/Views/Shared/_Layout.cshtml";
+	int counter = 1;
 }
 
 <section class="clearfix userSection padding">
@@ -7,9 +9,9 @@
 		<div class="row">
 			<div class="col-12">
 				<ul class="list-inline squareBtn">
-					<li class="li"><a asp-controller="User" asp-action="Profile" class="btn btn-common ">Profile</a></li>
-					<li class="li"><a asp-controller="User" asp-action="AllOrders" class="btn btn-common btn-theme cursor-default">All Orders</a></li>
-					<li class="li"><a asp-controller="User" asp-action="Wishlist" class="btn btn-common">Wishlist</a></li>
+					<li class="li"><a asp-controller="User" asp-action="Profile" class="btn btn-common btn-theme cursor-default">Profile</a></li>
+					<li class="li"><a asp-controller="User" asp-action="AllOrders" class="btn btn-common">All Orders</a></li>
+					<li class="li"><a asp-controller="User" asp-action="WishListDetails" class="btn btn-common">Wishlist</a></li>
 				</ul>
 			</div>
 		</div>
@@ -34,37 +36,18 @@
 							</thead>
 
 							<tbody>
-								<tr>
-									<td>#451231</td>
-									<td>Mar 25, 2016</td>
-									<td>2</td>
-									<td>$99.00</td>
-									<td><a asp-controller="User" asp-action="Order" class="btn btn-default">View</a></td>
-								</tr>
+								@foreach (var item in Model)
+								{
 
-								<tr>
-									<td>#451231</td>
-									<td>Mar 25, 2016</td>
-									<td>3</td>
-									<td>$150.00</td>
-									<td><a asp-controller="User" asp-action="Order" class="btn btn-default">View</a></td>
-								</tr>
-
-								<tr>
-									<td>#451231</td>
-									<td>Mar 25, 2016</td>
-									<td>3</td>
-									<td>$150.00</td>
-									<td><a asp-controller="User" asp-action="Order" class="btn btn-default">View</a></td>
-								</tr>
-
-								<tr>
-									<td>#451231</td>
-									<td>Mar 25, 2016</td>
-									<td>2</td>
-									<td>$99.00</td>
-									<td><a asp-controller="User" asp-action="Order" class="btn btn-default">View</a></td>
-								</tr>
+									<tr>
+										<td>@counter</td>
+										<td>@item.OrderDate</td>
+										<td>2</td>
+										@* <td>@item.Product.Price</td> *@
+										<td><a asp-controller="User" asp-action="Order" class="btn btn-default">View</a></td>
+									</tr>
+									counter++;
+								}	
 							</tbody>
 						</table>
 					</div>
@@ -72,4 +55,5 @@
 			</div>
 		</div>
 	</div>
+	@counter=1;
 </section>

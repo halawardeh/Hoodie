@@ -28,6 +28,18 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/CategoryProducts/ByCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlQcm9kdWN0c1xCeUNhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/CategoryProducts/BySubCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlQcm9kdWN0c1xCeVN1YkNhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/CategoryProducts/ProductDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlQcm9kdWN0c1xQcm9kdWN0RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,10 +58,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Home/ProductDetails.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/Home/Store.cshtml]
@@ -72,8 +80,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBbGxPcmRlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/Cart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDYXJ0LmNzaHRtbA==
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/AllOrdersDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBbGxPcmRlcnNEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/CartDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDYXJ0RGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/Checkout.cshtml]
@@ -96,12 +108,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/SignUp.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaWduVXAuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/Wishlist.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxXaXNobGlzdC5jc2h0bWw=
+[C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/User/WishListDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxXaXNoTGlzdERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Orange/Desktop/Hoodie/Hoodiee/Hoodie/Hoodie/Views/_ViewImports.cshtml]

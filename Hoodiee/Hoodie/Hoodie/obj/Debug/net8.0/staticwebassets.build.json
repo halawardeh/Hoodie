@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YaU6Z8045/r0PYaQis79F3lzFQVL2JrAwdun0Qein3A=",
+  "Hash": "whTqwFZg3D0YsYM8o19Y9UjZZr/OnzQ5hr5jQqEw9Jg=",
   "Source": "Hoodie",
   "BasePath": "_content/Hoodie",
   "Mode": "Default",
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tq69p3n1io",
-      "Integrity": "myBukr8U4gCU7IhbcdcES77RyIqTOWXP5usD3quMxZg=",
+      "Fingerprint": "grudv9lclc",
+      "Integrity": "/G9wsjzW5ow8S9KKhXnqDTDqvMWmDdnJO2urWNF1hWQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\ProductDetails.css"
@@ -1529,6 +1529,27 @@
       "OriginalItemSpec": "wwwroot\\Img\\img1\\1.mp4"
     },
     {
+      "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\baby.jpg",
+      "SourceId": "Hoodie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\",
+      "BasePath": "_content/Hoodie",
+      "RelativePath": "Img/img1/baby#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mwk125s5fq",
+      "Integrity": "6mlSnrCSBn+1cHaK4/dMNSbcIvmSPN5nx85/f2pTm2k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\img1\\baby.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\Baby.png",
       "SourceId": "Hoodie",
       "SourceType": "Discovered",
@@ -1655,6 +1676,27 @@
       "OriginalItemSpec": "wwwroot\\Img\\img1\\buatey-removebg-preview.png"
     },
     {
+      "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\children.jpg",
+      "SourceId": "Hoodie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\",
+      "BasePath": "_content/Hoodie",
+      "RelativePath": "Img/img1/children#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f0iwwk9rln",
+      "Integrity": "L2MJwWxSc25KM7KpAI/EtVe3pTx3oJGrg+q7lUFSwOg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\img1\\children.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\contactCover_enhanced.jpg",
       "SourceId": "Hoodie",
       "SourceType": "Discovered",
@@ -1716,27 +1758,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\img1\\denim.png"
-    },
-    {
-      "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion1.jpg",
-      "SourceId": "Hoodie",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\",
-      "BasePath": "_content/Hoodie",
-      "RelativePath": "Img/img1/fastion1#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "aa4rro3trz",
-      "Integrity": "juaHAiB9y2zrSFXc0Zj4IWN2SkE3Qd30yZkpeCtqyV8=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Img\\img1\\fastion1.jpg"
     },
     {
       "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion1-removebg-preview.png",
@@ -1842,27 +1863,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\img1\\fastion3-removebg-preview.png"
-    },
-    {
-      "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion4.jpg",
-      "SourceId": "Hoodie",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\",
-      "BasePath": "_content/Hoodie",
-      "RelativePath": "Img/img1/fastion4#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "chkvpm1ex8",
-      "Integrity": "kCU3e0X8IgXO3xd6Nh34fdZvB3hDrBvcl3yyzfnOdn4=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Img\\img1\\fastion4.jpg"
     },
     {
       "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion4-removebg-preview.png",
@@ -2012,12 +2012,12 @@
       "OriginalItemSpec": "wwwroot\\Img\\img1\\features\\f6.png"
     },
     {
-      "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\Hoodies.png",
+      "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\hoodies.png",
       "SourceId": "Hoodie",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\",
       "BasePath": "_content/Hoodie",
-      "RelativePath": "Img/img1/Hoodies#[.{fingerprint}]?.png",
+      "RelativePath": "Img/img1/hoodies#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -2030,7 +2030,7 @@
       "Integrity": "d3WXRVadzIOx73JvS6vqMUwh7PEI9KuuqPFxd91o5e8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Img\\img1\\Hoodies.png"
+      "OriginalItemSpec": "wwwroot\\Img\\img1\\hoodies.png"
     },
     {
       "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\icons\\credit-card.png",
@@ -2222,6 +2222,27 @@
       "OriginalItemSpec": "wwwroot\\Img\\img1\\Kids.png"
     },
     {
+      "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\kids_hoodie.jpg",
+      "SourceId": "Hoodie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\",
+      "BasePath": "_content/Hoodie",
+      "RelativePath": "Img/img1/kids_hoodie#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n8dp79ryva",
+      "Integrity": "R2p3unvNjbVn+Xha0zjHeKsgeG5OutSOdCZOju7pLzM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\img1\\kids_hoodie.jpg"
+    },
+    {
       "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\kids-removebg-preview.png",
       "SourceId": "Hoodie",
       "SourceType": "Discovered",
@@ -2283,6 +2304,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\img1\\logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\men.jpg",
+      "SourceId": "Hoodie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\",
+      "BasePath": "_content/Hoodie",
+      "RelativePath": "Img/img1/men#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8c21169rjr",
+      "Integrity": "GIvB5gdK+3wE+n3z4BFX6KtWhOE1p8XyUaLihurWDdM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\img1\\men.jpg"
     },
     {
       "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\Men.png",
@@ -2682,6 +2724,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Img\\img1\\profileImg.png"
+    },
+    {
+      "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\running_shoes.jpg",
+      "SourceId": "Hoodie",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\",
+      "BasePath": "_content/Hoodie",
+      "RelativePath": "Img/img1/running_shoes#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "chkvpm1ex8",
+      "Integrity": "kCU3e0X8IgXO3xd6Nh34fdZvB3hDrBvcl3yyzfnOdn4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Img\\img1\\running_shoes.jpg"
     },
     {
       "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\rw1.png",
@@ -3879,27 +3942,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\google-map.js"
-    },
-    {
-      "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\js\\site.js",
-      "SourceId": "Hoodie",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\",
-      "BasePath": "_content/Hoodie",
-      "RelativePath": "js/site#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "wnw7n22pfj",
-      "Integrity": "5D8qw/N/jSnOJUM9IvN1vOMMcjIVcKaLyzkZKh64R4A=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
       "Identity": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\js\\stores.js",
@@ -6117,7 +6159,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7707"
+          "Value": "7147"
         },
         {
           "Name": "Content-Type",
@@ -6125,11 +6167,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"myBukr8U4gCU7IhbcdcES77RyIqTOWXP5usD3quMxZg=\""
+          "Value": "\"/G9wsjzW5ow8S9KKhXnqDTDqvMWmDdnJO2urWNF1hWQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 17:33:37 GMT"
+          "Value": "Thu, 17 Apr 2025 13:11:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6139,12 +6181,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-myBukr8U4gCU7IhbcdcES77RyIqTOWXP5usD3quMxZg="
+          "Value": "sha256-/G9wsjzW5ow8S9KKhXnqDTDqvMWmDdnJO2urWNF1hWQ="
         }
       ]
     },
     {
-      "Route": "css/ProductDetails.tq69p3n1io.css",
+      "Route": "css/ProductDetails.grudv9lclc.css",
       "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\css\\ProductDetails.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6154,7 +6196,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7707"
+          "Value": "7147"
         },
         {
           "Name": "Content-Type",
@@ -6162,11 +6204,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"myBukr8U4gCU7IhbcdcES77RyIqTOWXP5usD3quMxZg=\""
+          "Value": "\"/G9wsjzW5ow8S9KKhXnqDTDqvMWmDdnJO2urWNF1hWQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 17:33:37 GMT"
+          "Value": "Thu, 17 Apr 2025 13:11:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6176,7 +6218,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tq69p3n1io"
+          "Value": "grudv9lclc"
         },
         {
           "Name": "label",
@@ -6184,7 +6226,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-myBukr8U4gCU7IhbcdcES77RyIqTOWXP5usD3quMxZg="
+          "Value": "sha256-/G9wsjzW5ow8S9KKhXnqDTDqvMWmDdnJO2urWNF1hWQ="
         }
       ]
     },
@@ -6211,7 +6253,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 21:55:48 GMT"
+          "Value": "Sat, 05 Apr 2025 15:10:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6256,7 +6298,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 21:55:48 GMT"
+          "Value": "Sat, 05 Apr 2025 15:10:55 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6457,7 +6499,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 11:27:25 GMT"
+          "Value": "Fri, 25 Apr 2025 18:29:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6494,7 +6536,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 11:27:25 GMT"
+          "Value": "Fri, 25 Apr 2025 18:29:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6539,7 +6581,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 11:27:25 GMT"
+          "Value": "Fri, 25 Apr 2025 18:29:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6584,7 +6626,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 11:27:25 GMT"
+          "Value": "Fri, 25 Apr 2025 18:29:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11974,6 +12016,88 @@
       ]
     },
     {
+      "Route": "Img/img1/baby.jpg",
+      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\baby.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6mlSnrCSBn+1cHaK4/dMNSbcIvmSPN5nx85/f2pTm2k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 18:55:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6mlSnrCSBn+1cHaK4/dMNSbcIvmSPN5nx85/f2pTm2k="
+        }
+      ]
+    },
+    {
+      "Route": "Img/img1/baby.mwk125s5fq.jpg",
+      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\baby.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "48196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6mlSnrCSBn+1cHaK4/dMNSbcIvmSPN5nx85/f2pTm2k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 18:55:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mwk125s5fq"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/img1/baby.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6mlSnrCSBn+1cHaK4/dMNSbcIvmSPN5nx85/f2pTm2k="
+        }
+      ]
+    },
+    {
       "Route": "Img/img1/Baby.png",
       "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\Baby.png",
       "Selectors": [],
@@ -12421,6 +12545,88 @@
       ]
     },
     {
+      "Route": "Img/img1/children.f0iwwk9rln.jpg",
+      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\children.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L2MJwWxSc25KM7KpAI/EtVe3pTx3oJGrg+q7lUFSwOg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 18:48:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f0iwwk9rln"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/img1/children.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-L2MJwWxSc25KM7KpAI/EtVe3pTx3oJGrg+q7lUFSwOg="
+        }
+      ]
+    },
+    {
+      "Route": "Img/img1/children.jpg",
+      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\children.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29467"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"L2MJwWxSc25KM7KpAI/EtVe3pTx3oJGrg+q7lUFSwOg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 18:48:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-L2MJwWxSc25KM7KpAI/EtVe3pTx3oJGrg+q7lUFSwOg="
+        }
+      ]
+    },
+    {
       "Route": "Img/img1/contactCover_enhanced.jpg",
       "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\contactCover_enhanced.jpg",
       "Selectors": [],
@@ -12667,88 +12873,6 @@
       ]
     },
     {
-      "Route": "Img/img1/fastion1.aa4rro3trz.jpg",
-      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "24473"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"juaHAiB9y2zrSFXc0Zj4IWN2SkE3Qd30yZkpeCtqyV8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 17:55:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "aa4rro3trz"
-        },
-        {
-          "Name": "label",
-          "Value": "Img/img1/fastion1.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-juaHAiB9y2zrSFXc0Zj4IWN2SkE3Qd30yZkpeCtqyV8="
-        }
-      ]
-    },
-    {
-      "Route": "Img/img1/fastion1.jpg",
-      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "24473"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"juaHAiB9y2zrSFXc0Zj4IWN2SkE3Qd30yZkpeCtqyV8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 17:55:29 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-juaHAiB9y2zrSFXc0Zj4IWN2SkE3Qd30yZkpeCtqyV8="
-        }
-      ]
-    },
-    {
       "Route": "Img/img1/fastion1-removebg-preview.5krst0gn54.png",
       "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion1-removebg-preview.png",
       "Selectors": [],
@@ -12771,7 +12895,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 18:00:24 GMT"
+          "Value": "Wed, 16 Apr 2025 18:30:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -12816,7 +12940,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 18:00:24 GMT"
+          "Value": "Wed, 16 Apr 2025 18:30:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -13155,88 +13279,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-9lnnn1a1cm3qUI/SaE+JuM1h3ZBMO0wOHMIGPwwZHZw="
-        }
-      ]
-    },
-    {
-      "Route": "Img/img1/fastion4.chkvpm1ex8.jpg",
-      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion4.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "56079"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kCU3e0X8IgXO3xd6Nh34fdZvB3hDrBvcl3yyzfnOdn4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 17:59:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "chkvpm1ex8"
-        },
-        {
-          "Name": "label",
-          "Value": "Img/img1/fastion4.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-kCU3e0X8IgXO3xd6Nh34fdZvB3hDrBvcl3yyzfnOdn4="
-        }
-      ]
-    },
-    {
-      "Route": "Img/img1/fastion4.jpg",
-      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion4.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "56079"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kCU3e0X8IgXO3xd6Nh34fdZvB3hDrBvcl3yyzfnOdn4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 27 Jan 2025 17:59:13 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kCU3e0X8IgXO3xd6Nh34fdZvB3hDrBvcl3yyzfnOdn4="
         }
       ]
     },
@@ -13815,8 +13857,8 @@
       ]
     },
     {
-      "Route": "Img/img1/Hoodies.h6iubujmm7.png",
-      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\Hoodies.png",
+      "Route": "Img/img1/hoodies.h6iubujmm7.png",
+      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\hoodies.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -13851,7 +13893,7 @@
         },
         {
           "Name": "label",
-          "Value": "Img/img1/Hoodies.png"
+          "Value": "Img/img1/hoodies.png"
         },
         {
           "Name": "integrity",
@@ -13860,8 +13902,8 @@
       ]
     },
     {
-      "Route": "Img/img1/Hoodies.png",
-      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\Hoodies.png",
+      "Route": "Img/img1/hoodies.png",
+      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\hoodies.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -14635,6 +14677,88 @@
       ]
     },
     {
+      "Route": "Img/img1/kids_hoodie.jpg",
+      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\kids_hoodie.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R2p3unvNjbVn+Xha0zjHeKsgeG5OutSOdCZOju7pLzM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Apr 2025 13:48:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R2p3unvNjbVn+Xha0zjHeKsgeG5OutSOdCZOju7pLzM="
+        }
+      ]
+    },
+    {
+      "Route": "Img/img1/kids_hoodie.n8dp79ryva.jpg",
+      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\kids_hoodie.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9420"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R2p3unvNjbVn+Xha0zjHeKsgeG5OutSOdCZOju7pLzM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Apr 2025 13:48:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n8dp79ryva"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/img1/kids_hoodie.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R2p3unvNjbVn+Xha0zjHeKsgeG5OutSOdCZOju7pLzM="
+        }
+      ]
+    },
+    {
       "Route": "Img/img1/kids-removebg-preview.kla5ckap8k.png",
       "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\kids-removebg-preview.png",
       "Selectors": [],
@@ -14877,6 +15001,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-X67N2kYRcl5c8hMQu5Vy9EXLnVvSN2f+mDe8KFJKBcY="
+        }
+      ]
+    },
+    {
+      "Route": "Img/img1/men.8c21169rjr.jpg",
+      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\men.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28660"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GIvB5gdK+3wE+n3z4BFX6KtWhOE1p8XyUaLihurWDdM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 18:33:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8c21169rjr"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/img1/men.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GIvB5gdK+3wE+n3z4BFX6KtWhOE1p8XyUaLihurWDdM="
+        }
+      ]
+    },
+    {
+      "Route": "Img/img1/men.jpg",
+      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\men.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28660"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GIvB5gdK+3wE+n3z4BFX6KtWhOE1p8XyUaLihurWDdM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 16 Apr 2025 18:33:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GIvB5gdK+3wE+n3z4BFX6KtWhOE1p8XyUaLihurWDdM="
         }
       ]
     },
@@ -16435,6 +16641,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-hnMBKyYuXcV7x6NaGIRT4g6PGZJtHv6Le/Rk0o0w5hY="
+        }
+      ]
+    },
+    {
+      "Route": "Img/img1/running_shoes.chkvpm1ex8.jpg",
+      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\running_shoes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56079"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kCU3e0X8IgXO3xd6Nh34fdZvB3hDrBvcl3yyzfnOdn4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Jan 2025 17:59:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "chkvpm1ex8"
+        },
+        {
+          "Name": "label",
+          "Value": "Img/img1/running_shoes.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kCU3e0X8IgXO3xd6Nh34fdZvB3hDrBvcl3yyzfnOdn4="
+        }
+      ]
+    },
+    {
+      "Route": "Img/img1/running_shoes.jpg",
+      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\running_shoes.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "56079"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kCU3e0X8IgXO3xd6Nh34fdZvB3hDrBvcl3yyzfnOdn4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 27 Jan 2025 17:59:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kCU3e0X8IgXO3xd6Nh34fdZvB3hDrBvcl3yyzfnOdn4="
         }
       ]
     },
@@ -21109,88 +21397,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-DnwEXAACXJdbtuzPYcqPYq8sCJLVy+i0xMhGyVq4TsY="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "72981"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5D8qw/N/jSnOJUM9IvN1vOMMcjIVcKaLyzkZKh64R4A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 11:21:17 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-5D8qw/N/jSnOJUM9IvN1vOMMcjIVcKaLyzkZKh64R4A="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.wnw7n22pfj.js",
-      "AssetFile": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "72981"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"5D8qw/N/jSnOJUM9IvN1vOMMcjIVcKaLyzkZKh64R4A=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 03 Apr 2025 11:21:17 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "wnw7n22pfj"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-5D8qw/N/jSnOJUM9IvN1vOMMcjIVcKaLyzkZKh64R4A="
         }
       ]
     },

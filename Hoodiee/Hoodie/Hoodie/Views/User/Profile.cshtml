@@ -3,8 +3,8 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<!-- USER SECTION -->
+@* <h1>@Context.Session.GetString("email");</h1>
+ *@<!-- USER SECTION -->
 <section class="clearfix userSection padding">
     <div class="container">
         <div class="row">
@@ -12,7 +12,7 @@
                 <ul class="list-inline squareBtn">
                     <li class="li"><a asp-controller="User" asp-action="Profile" class="btn btn-common btn-theme cursor-default">Profile</a></li>
                     <li class="li"><a asp-controller="User" asp-action="AllOrders" class="btn btn-common">All Orders</a></li>
-                    <li class="li"><a asp-controller="User" asp-action="Wishlist" class="btn btn-common">Wishlist</a></li>
+                    <li class="li"><a asp-controller="User" asp-action="WishListDetails" class="btn btn-common">Wishlist</a></li>
                 </ul>
             </div>
         </div>
@@ -25,13 +25,7 @@
                     </div>
                     <div class="profile">
                         <div class="row">
-                            <div class="col-md-3 col-xl-2">
-                                <div class="thumbnail">
-                                    <img class="lazyestload" data-src="https://i.pinimg.com/474x/6c/c5/19/6cc519f013abcf2ad6168a126ee877db.jpg"
-                                         src="https://i.pinimg.com/474x/6c/c5/19/6cc519f013abcf2ad6168a126ee877db.jpg"
-                                         alt="profile-image">
-                                </div>
-                            </div>
+
                             <div class="col-md-9 col-xl-10">
                                 <div class="form-horizontal">
                                     <div class="form-group row">
@@ -61,8 +55,11 @@
                                     </div>
 
                                     <div class="form-group row justify-content-md-end">
+                                        <div class="col-lg-offset-10 col-xl-2 col-offset-9 col-md-3" >
+                                            <a asp-action="EditProfile" class="btn btn-primary btn-block">Edit  Your Profile</a>
+                                        </div>
                                         <div class="col-lg-offset-10 col-xl-2 col-offset-9 col-md-3">
-                                            <a asp-controller="User" asp-action="EditProfile" class="btn btn-primary btn-block">Edit Profile</a>
+                                            <a asp-action="ResetPassword" class="btn btn-primary btn-block">Reset Password</a>
                                         </div>
                                     </div>
                                 </div>

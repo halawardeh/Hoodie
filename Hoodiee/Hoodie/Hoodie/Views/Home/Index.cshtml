@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Category>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -55,6 +56,152 @@
     </div>
 </section>
 
+
+<!-- Categories SECTION -->
+<section class="clearfix offersSection patternbg">
+    <div class="secotionTitle">
+        <h2>Our Categories</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            @foreach (var category in Model){
+                <div class="col-sm-3 col-xs-12">
+                    <div class="offerContent">
+                        <img src="~/Img/img1/@category.Image" data-ng-src="~/Img/img1/@category.Image" alt="Image Offer">
+                        <div class="offerMasking">
+                            <div class="offerTitle">
+                                <h4>
+                                    <a asp-controller="CategoryProducts" asp-action="ByCategory" asp-route-categoryId="@category.CategoryId">
+                                        @category.Name
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+
+<!-- HOME GALLERY SECTION -->
+<section>
+    <div class="clearfix homeGalleryTitle">
+        <div class="container">
+            <div class="secotionTitle">
+                <h2><span>Explore </span>Man Category</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="row isotopeContainer" id="container">
+        <div class="col-sm-3 isotopeSelector hair">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+                    <div class="overlay-content">
+                        <a href="img/home/gallery-1.jpg" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Skin Care</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 isotopeSelector makeup">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=600" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+                    <div class="overlay-content">
+                        <a href="img/home/gallery-2.jpg" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Skin Care</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 isotopeSelector massage">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+                    <div class="overlay-content">
+                        <a href="img/home/gallery-3.jpg" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Jackets</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 isotopeSelector hair">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+                    <div class="overlay-content">
+                        <a href="img/home/gallery-5.jpg" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Jackets</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 isotopeSelector makeup">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+                    <div class="overlay-content">
+                        <a href="img/home/gallery-5.jpg" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Jackets</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 isotopeSelector facial">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+                    <div class="overlay-content">
+                        <a href="img/home/gallery-6.jpg" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Jackets</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 isotopeSelector facial">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=600" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+                    <div class="overlay-content">
+                        <a href="img/home/gallery-7.jpg" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Jackets</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 isotopeSelector massage">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+                    <div class="overlay-content">
+                        <a href="img/home/gallery-8.jpg" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Jackets</h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- ABOUT SECTION -->
 <section class="container-fluid clearfix aboutSection patternbg">
     <div class="aboutInner">
@@ -83,196 +230,5 @@
 </section>
 
 
-<!-- Categories SECTION -->
-<section class="clearfix offersSection patternbg">
-    <div class="secotionTitle">
-        <h2>Our Categories</h2>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3 col-xs-12">
-                <div class="offerContent">
-                    <img class="lazyestload" src="https://i.pinimg.com/474x/db/cc/69/dbcc69aa4428ac26c24f1d179cfc14e3.jpg" data-src="https://i.pinimg.com/474x/db/cc/69/dbcc69aa4428ac26c24f1d179cfc14e3.jpg" alt="Image Offer">
-                    <div class="offerMasking">
-                        <div class="offerTitle"><h4><a asp-controller="Home" asp-action="Hoodie">Men</a></h4></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-                <div class="offerContent">
-                    <img class="lazyestload" data-src="https://i.pinimg.com/474x/04/2e/69/042e692fc57a15c405283a57023f13e5.jpg" src="https://i.pinimg.com/474x/04/2e/69/042e692fc57a15c405283a57023f13e5.jpg" alt="Image Offer">
-                    <div class="offerMasking">
-                        <div class="offerTitle"><h4><a asp-controller="Home" asp-action="Hoodie">Shoes</a></h4></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-                <div class="offerContent">
-                    <img class="lazyestload" src="https://i.pinimg.com/474x/db/cc/69/dbcc69aa4428ac26c24f1d179cfc14e3.jpg" data-src="https://i.pinimg.com/474x/db/cc/69/dbcc69aa4428ac26c24f1d179cfc14e3.jpg" alt="Image Offer">
-                    <div class="offerMasking">
-                        <div class="offerTitle"><h4><a asp-controller="Home" asp-action="Hoodie">ًWoman</a></h4></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-                <div class="offerContent">
-                    <img class="lazyestload" src="https://i.pinimg.com/474x/db/cc/69/dbcc69aa4428ac26c24f1d179cfc14e3.jpg" data-src="https://i.pinimg.com/474x/db/cc/69/dbcc69aa4428ac26c24f1d179cfc14e3.jpg" alt="Image Offer">
-                    <div class="offerMasking">
-                        <div class="offerTitle"><h4><a asp-controller="Home" asp-action="Hoodie">Hoodies</a></h4></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 col-xs-12">
-                <div class="offerContent">
-                    <img class="lazyestload" src="https://i.pinimg.com/474x/db/cc/69/dbcc69aa4428ac26c24f1d179cfc14e3.jpg" data-src="https://i.pinimg.com/474x/db/cc/69/dbcc69aa4428ac26c24f1d179cfc14e3.jpg" alt="Image Offer">
-                    <div class="offerMasking">
-                        <div class="offerTitle"><h4><a asp-controller="Home" asp-action="Hoodie">Baby</a></h4></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-                <div class="offerContent">
-                    <img class="lazyestload" src="https://i.pinimg.com/474x/db/cc/69/dbcc69aa4428ac26c24f1d179cfc14e3.jpg" data-src="https://i.pinimg.com/474x/db/cc/69/dbcc69aa4428ac26c24f1d179cfc14e3.jpg" alt="Image Offer">
-                    <div class="offerMasking">
-                        <div class="offerTitle"><h4><a asp-controller="Home" asp-action="Hoodie">Children</a></h4></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-                <div class="offerContent">
-                    <img class="lazyestload" src="https://i.pinimg.com/474x/db/cc/69/dbcc69aa4428ac26c24f1d179cfc14e3.jpg" data-src="https://i.pinimg.com/474x/db/cc/69/dbcc69aa4428ac26c24f1d179cfc14e3.jpg" alt="Image Offer">
-                    <div class="offerMasking">
-                        <div class="offerTitle"><h4><a asp-controller="Home" asp-action="Hoodie">Pants</a></h4></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-                <div class="offerContent">
-                    <img class="lazyestload" src="https://i.pinimg.com/474x/db/6b/d8/db6bd8db59673796910256ad753b964d.jpg" data-src="https://i.pinimg.com/474x/db/cc/69/dbcc69aa4428ac26c24f1d179cfc14e3.jpg" alt="Image Offer">
-                    <div class="offerMasking">
-                        <div class="offerTitle"><h4><a asp-controller="Home" asp-action="Hoodie">shirt</a></h4></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- HOME GALLERY SECTION -->
-<section>
-    <div class="clearfix homeGalleryTitle">
-        <div class="container">
-            <div class="secotionTitle">
-                <h2><span>Explore </span>Man Category</h2>
-            </div>
-        </div>
-    </div>
-
-    <div class="row isotopeContainer" id="container">
-        <div class="col-sm-3 isotopeSelector hair">
-            <div class="card">
-                <div class="card-img">
-                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" src="img/home/gallery-1.jpg" alt="Image">
-                    <div class="overlay-content">
-                        <a href="img/home/gallery-1.jpg" data-fancybox="images">
-                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Skin Care</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-3 isotopeSelector makeup">
-            <div class="card">
-                <div class="card-img">
-                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=600" src="img/home/gallery-2.jpg" alt="Image">
-                    <div class="overlay-content">
-                        <a href="img/home/gallery-2.jpg" data-fancybox="images">
-                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Skin Care</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-3 isotopeSelector massage">
-            <div class="card">
-                <div class="card-img">
-                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" src="img/home/gallery-3.jpg" alt="Image">
-                    <div class="overlay-content">
-                        <a href="img/home/gallery-3.jpg" data-fancybox="images">
-                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Jackets</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-3 isotopeSelector hair">
-            <div class="card">
-                <div class="card-img">
-                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" src="img/home/gallery-5.jpg" alt="Image">
-                    <div class="overlay-content">
-                        <a href="img/home/gallery-5.jpg" data-fancybox="images">
-                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Jackets</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-3 isotopeSelector makeup">
-            <div class="card">
-                <div class="card-img">
-                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" src="img/home/gallery-5.jpg" alt="Image">
-                    <div class="overlay-content">
-                        <a href="img/home/gallery-5.jpg" data-fancybox="images">
-                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Jackets</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-3 isotopeSelector facial">
-            <div class="card">
-                <div class="card-img">
-                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" src="img/home/gallery-6.jpg" alt="Image">
-                    <div class="overlay-content">
-                        <a href="img/home/gallery-6.jpg" data-fancybox="images">
-                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Jackets</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-3 isotopeSelector facial">
-            <div class="card">
-                <div class="card-img">
-                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=600" src="img/home/gallery-7.jpg" alt="Image">
-                    <div class="overlay-content">
-                        <a href="img/home/gallery-7.jpg" data-fancybox="images">
-                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Jackets</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-3 isotopeSelector massage">
-            <div class="card">
-                <div class="card-img">
-                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=600" src="img/home/gallery-8.jpg" alt="Image">
-                    <div class="overlay-content">
-                        <a href="img/home/gallery-8.jpg" data-fancybox="images">
-                            <h5><i class="fa fa-plus" aria-hidden="true"></i> <br>Jackets</h5>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section><br /><br /><br />
+<br /><br /><br />

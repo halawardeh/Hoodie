@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Hoodie.Models;
 
-public partial class MyDbContext : DbContext
+public partial class HoodieContext : DbContext
 {
-    public MyDbContext()
+    public HoodieContext()
     {
     }
 
-    public MyDbContext(DbContextOptions<MyDbContext> options)
+    public HoodieContext(DbContextOptions<HoodieContext> options)
         : base(options)
     {
     }
@@ -19,7 +19,13 @@ public partial class MyDbContext : DbContext
 
     public virtual DbSet<Category> Categories { get; set; }
 
+    public virtual DbSet<Checkout> Checkouts { get; set; }
+
+    public virtual DbSet<Color> Colors { get; set; }
+
     public virtual DbSet<Discount> Discounts { get; set; }
+
+    public virtual DbSet<Message> Messages { get; set; }
 
     public virtual DbSet<Notification> Notifications { get; set; }
 
@@ -27,13 +33,26 @@ public partial class MyDbContext : DbContext
 
     public virtual DbSet<Product> Products { get; set; }
 
+    public virtual DbSet<ProductColor> ProductColors { get; set; }
+
+    public virtual DbSet<ProductSize> ProductSizes { get; set; }
+
     public virtual DbSet<Review> Reviews { get; set; }
 
+    public virtual DbSet<Size> Sizes { get; set; }
+
     public virtual DbSet<Store> Stores { get; set; }
+
+    public virtual DbSet<SubCategory> SubCategories { get; set; }
 
     public virtual DbSet<Tag> Tags { get; set; }
 
     public virtual DbSet<User> Users { get; set; }
+
+    public virtual DbSet<Wishlist> Wishlists { get; set; }
+
+    public DbSet<OrderItem> OrderItems { get; set; }
+
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
@@ -41,6 +60,22 @@ public partial class MyDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+    
+
+        modelBuilder.Entity<OrderItem>()
+            .HasOne(oi => oi.Order)
+            .WithMany(o => o.OrderItems)
+            .HasForeignKey(oi => oi.OrderId);
+
+        modelBuilder.Entity<OrderItem>()
+            .HasOne(oi => oi.Product)
+            .WithMany()
+            .HasForeignKey(oi => oi.ProductId);
+
+        modelBuilder.Entity<OrderItem>()
+     .Property(o => o.Price)
+     .HasColumnType("decimal(18,2)"); // تحديد دقة و مقياس
+
         modelBuilder.Entity<Cart>(entity =>
         {
             entity.HasKey(e => new { e.UserId, e.ProductId }).HasName("PK__Cart__794B11CB1B403B44");
@@ -82,6 +117,41 @@ public partial class MyDbContext : DbContext
                 .HasConstraintName("FK__Category__storeI__3C69FB99");
         });
 
+        modelBuilder.Entity<Checkout>(entity =>
+        {
+            entity.HasKey(e => e.CheckoutId).HasName("PK__Checkout__E07EF51C289CE5AA");
+
+            entity.ToTable("Checkout");
+
+            entity.Property(e => e.CheckoutId).HasColumnName("CheckoutID");
+            entity.Property(e => e.CheckoutDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.OrderId).HasColumnName("OrderID");
+            entity.Property(e => e.PaymentMethod).HasMaxLength(50);
+            entity.Property(e => e.PaymentStatus).HasMaxLength(50);
+            entity.Property(e => e.UserId).HasColumnName("UserID");
+
+            entity.HasOne(d => d.Order).WithMany(p => p.Checkouts)
+                .HasForeignKey(d => d.OrderId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Checkout_Orders");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Checkouts)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Checkout_Users");
+        });
+
+        modelBuilder.Entity<Color>(entity =>
+        {
+            entity.HasKey(e => e.ColorId).HasName("PK__Colors__8DA7676DB91E00AE");
+
+            entity.Property(e => e.ColorId).HasColumnName("ColorID");
+            entity.Property(e => e.HexCode).HasMaxLength(7);
+            entity.Property(e => e.Name).HasMaxLength(50);
+        });
+
         modelBuilder.Entity<Discount>(entity =>
         {
             entity.HasKey(e => e.DiscountId).HasName("PK__Discount__D2130A066911974C");
@@ -109,6 +179,18 @@ public partial class MyDbContext : DbContext
                 .HasConstraintName("FK__Discounts__store__59063A47");
         });
 
+        modelBuilder.Entity<Message>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Messages__3214EC075B5693B0");
+
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+            entity.Property(e => e.Email).HasMaxLength(150);
+            entity.Property(e => e.PhoneNumber).HasMaxLength(20);
+            entity.Property(e => e.UserName).HasMaxLength(100);
+        });
+
         modelBuilder.Entity<Notification>(entity =>
         {
             entity.HasKey(e => e.NotificationId).HasName("PK__Notifica__4BA5CE89B84C16E6");
@@ -132,8 +214,8 @@ public partial class MyDbContext : DbContext
 
             entity.Property(e => e.OrderId).HasColumnName("orderID");
             entity.Property(e => e.OrderDate).HasColumnName("orderDate");
-            entity.Property(e => e.ProductId).HasColumnName("productID");
-            entity.Property(e => e.Quantity).HasColumnName("quantity");
+            //entity.Property(e => e.ProductId).HasColumnName("productID");
+            //entity.Property(e => e.Quantity).HasColumnName("quantity");
             entity.Property(e => e.Status)
                 .HasMaxLength(50)
                 .HasColumnName("status");
@@ -142,9 +224,9 @@ public partial class MyDbContext : DbContext
                 .HasColumnName("totalAmount");
             entity.Property(e => e.UserId).HasColumnName("userID");
 
-            entity.HasOne(d => d.Product).WithMany(p => p.Orders)
-                .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK__Orders__productI__4BAC3F29");
+            //entity.HasOne(d => d.Product).WithMany(p => p.Orders)
+            //    .HasForeignKey(d => d.ProductId)
+            //    .HasConstraintName("FK__Orders__productI__4BAC3F29");
 
             entity.HasOne(d => d.User).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.UserId)
@@ -160,9 +242,6 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.ProductId).HasColumnName("productID");
             entity.Property(e => e.Availability).HasColumnName("availability");
             entity.Property(e => e.CategoryId).HasColumnName("categoryID");
-            entity.Property(e => e.Color)
-                .HasMaxLength(50)
-                .HasColumnName("color");
             entity.Property(e => e.Description)
                 .HasMaxLength(255)
                 .HasColumnName("description");
@@ -179,9 +258,6 @@ public partial class MyDbContext : DbContext
                 .HasColumnType("decimal(10, 2)")
                 .HasColumnName("price");
             entity.Property(e => e.Quantity).HasColumnName("quantity");
-            entity.Property(e => e.Size)
-                .HasMaxLength(50)
-                .HasColumnName("size");
             entity.Property(e => e.Solds).HasColumnName("solds");
             entity.Property(e => e.StoreId).HasColumnName("storeID");
 
@@ -213,6 +289,44 @@ public partial class MyDbContext : DbContext
                     });
         });
 
+        modelBuilder.Entity<ProductColor>(entity =>
+        {
+            entity.HasKey(e => new { e.ProductId, e.ColorId }).HasName("PK__ProductC__E5CAA73C19CAA75C");
+
+            entity.Property(e => e.ProductId).HasColumnName("productID");
+            entity.Property(e => e.ColorId).HasColumnName("ColorID");
+            entity.Property(e => e.Additional)
+                .HasMaxLength(25)
+                .IsUnicode(false);
+
+            entity.HasOne(d => d.Color).WithMany(p => p.ProductColors)
+                .HasForeignKey(d => d.ColorId)
+                .HasConstraintName("FK_ProductColors_Colors");
+
+            entity.HasOne(d => d.Product).WithMany(p => p.ProductColors)
+                .HasForeignKey(d => d.ProductId)
+                .HasConstraintName("FK_ProductColors_Product");
+        });
+
+        modelBuilder.Entity<ProductSize>(entity =>
+        {
+            entity.HasKey(e => new { e.ProductId, e.SizeId }).HasName("PK__ProductS__952B01DFB20826A6");
+
+            entity.Property(e => e.ProductId).HasColumnName("productID");
+            entity.Property(e => e.SizeId).HasColumnName("SizeID");
+            entity.Property(e => e.Additional)
+                .HasMaxLength(25)
+                .IsUnicode(false);
+
+            entity.HasOne(d => d.Product).WithMany(p => p.ProductSizes)
+                .HasForeignKey(d => d.ProductId)
+                .HasConstraintName("FK_ProductSizes_Products");
+
+            entity.HasOne(d => d.Size).WithMany(p => p.ProductSizes)
+                .HasForeignKey(d => d.SizeId)
+                .HasConstraintName("FK_ProductSizes_Sizes");
+        });
+
         modelBuilder.Entity<Review>(entity =>
         {
             entity.HasKey(e => e.ReviewId).HasName("PK__Review__2ECD6E24A3BFE699");
@@ -236,6 +350,14 @@ public partial class MyDbContext : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.Reviews)
                 .HasForeignKey(d => d.UserId)
                 .HasConstraintName("FK__Review__userID__4E88ABD4");
+        });
+
+        modelBuilder.Entity<Size>(entity =>
+        {
+            entity.HasKey(e => e.SizeId).HasName("PK__Sizes__83BD095A1025EED1");
+
+            entity.Property(e => e.SizeId).HasColumnName("SizeID");
+            entity.Property(e => e.SizeName).HasMaxLength(10);
         });
 
         modelBuilder.Entity<Store>(entity =>
@@ -262,6 +384,19 @@ public partial class MyDbContext : DbContext
             entity.HasOne(d => d.Owner).WithMany(p => p.Stores)
                 .HasForeignKey(d => d.OwnerId)
                 .HasConstraintName("FK__Store__ownerID__398D8EEE");
+        });
+
+        modelBuilder.Entity<SubCategory>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__SubCateg__3214EC07B0E31BD8");
+
+            entity.Property(e => e.Image).HasMaxLength(255);
+            entity.Property(e => e.Name).HasMaxLength(100);
+
+            entity.HasOne(d => d.Category).WithMany(p => p.SubCategories)
+                .HasForeignKey(d => d.CategoryId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__SubCatego__Categ__6FE99F9F");
         });
 
         modelBuilder.Entity<Tag>(entity =>
@@ -297,31 +432,38 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.Lname)
                 .HasMaxLength(50)
                 .HasColumnName("lname");
+            entity.Property(e => e.Password)
+                .IsUnicode(false)
+                .HasColumnName("password");
             entity.Property(e => e.Phonenumber)
                 .HasMaxLength(20)
                 .HasColumnName("phonenumber");
             entity.Property(e => e.UserType)
                 .HasMaxLength(20)
                 .HasColumnName("userType");
+        });
 
-            entity.HasMany(d => d.Products).WithMany(p => p.Users)
-                .UsingEntity<Dictionary<string, object>>(
-                    "Wishlist",
-                    r => r.HasOne<Product>().WithMany()
-                        .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.ClientSetNull)
-                        .HasConstraintName("FK__Wishlist__produc__440B1D61"),
-                    l => l.HasOne<User>().WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.ClientSetNull)
-                        .HasConstraintName("FK__Wishlist__userID__4316F928"),
-                    j =>
-                    {
-                        j.HasKey("UserId", "ProductId").HasName("PK__Wishlist__794B11CB3AA3949B");
-                        j.ToTable("Wishlist");
-                        j.IndexerProperty<int>("UserId").HasColumnName("userID");
-                        j.IndexerProperty<int>("ProductId").HasColumnName("productID");
-                    });
+        modelBuilder.Entity<Wishlist>(entity =>
+        {
+            entity.HasKey(e => new { e.UserId, e.ProductId }).HasName("PK__Wishlist__794B11CB3AA3949B");
+
+            entity.ToTable("Wishlist");
+
+            entity.Property(e => e.UserId).HasColumnName("userID");
+            entity.Property(e => e.ProductId).HasColumnName("productID");
+            entity.Property(e => e.AddedDate)
+                .HasDefaultValueSql("(getdate())")
+                .HasColumnType("datetime");
+
+            entity.HasOne(d => d.Product).WithMany(p => p.Wishlists)
+                .HasForeignKey(d => d.ProductId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Wishlist__produc__440B1D61");
+
+            entity.HasOne(d => d.User).WithMany(p => p.Wishlists)
+                .HasForeignKey(d => d.UserId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Wishlist__userID__4316F928");
         });
 
         OnModelCreatingPartial(modelBuilder);

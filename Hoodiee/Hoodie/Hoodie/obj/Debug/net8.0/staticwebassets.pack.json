@@ -277,10 +277,6 @@
       "PackagePath": "staticwebassets\\Img\\img1\\Beauty.png"
     },
     {
-      "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\Hoodies.png",
-      "PackagePath": "staticwebassets\\Img\\img1\\Hoodies.png"
-    },
-    {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\Jackets.png",
       "PackagePath": "staticwebassets\\Img\\img1\\Jackets.png"
     },
@@ -341,12 +337,20 @@
       "PackagePath": "staticwebassets\\Img\\img1\\baby-removebg-preview.png"
     },
     {
+      "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\baby.jpg",
+      "PackagePath": "staticwebassets\\Img\\img1\\baby.jpg"
+    },
+    {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\bages-removebg-preview.png",
       "PackagePath": "staticwebassets\\Img\\img1\\bages-removebg-preview.png"
     },
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\buatey-removebg-preview.png",
       "PackagePath": "staticwebassets\\Img\\img1\\buatey-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\children.jpg",
+      "PackagePath": "staticwebassets\\Img\\img1\\children.jpg"
     },
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\contactCover_enhanced.jpg",
@@ -363,10 +367,6 @@
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion1-removebg-preview.png",
       "PackagePath": "staticwebassets\\Img\\img1\\fastion1-removebg-preview.png"
-    },
-    {
-      "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion1.jpg",
-      "PackagePath": "staticwebassets\\Img\\img1\\fastion1.jpg"
     },
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion2-removebg-preview.png",
@@ -387,10 +387,6 @@
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion4-removebg-preview.png",
       "PackagePath": "staticwebassets\\Img\\img1\\fastion4-removebg-preview.png"
-    },
-    {
-      "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\fastion4.jpg",
-      "PackagePath": "staticwebassets\\Img\\img1\\fastion4.jpg"
     },
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\features\\f1.png",
@@ -415,6 +411,10 @@
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\features\\f6.png",
       "PackagePath": "staticwebassets\\Img\\img1\\features\\f6.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\hoodies.png",
+      "PackagePath": "staticwebassets\\Img\\img1\\hoodies.png"
     },
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\icons\\credit-card.png",
@@ -445,12 +445,20 @@
       "PackagePath": "staticwebassets\\Img\\img1\\kids-removebg-preview.png"
     },
     {
+      "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\kids_hoodie.jpg",
+      "PackagePath": "staticwebassets\\Img\\img1\\kids_hoodie.jpg"
+    },
+    {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\logo.png",
       "PackagePath": "staticwebassets\\Img\\img1\\logo.png"
     },
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\men-removebg-preview.png",
       "PackagePath": "staticwebassets\\Img\\img1\\men-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\men.jpg",
+      "PackagePath": "staticwebassets\\Img\\img1\\men.jpg"
     },
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\modest-removebg-preview.png",
@@ -507,6 +515,10 @@
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\profileImg.png",
       "PackagePath": "staticwebassets\\Img\\img1\\profileImg.png"
+    },
+    {
+      "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\running_shoes.jpg",
+      "PackagePath": "staticwebassets\\Img\\img1\\running_shoes.jpg"
     },
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\Img\\img1\\rw1.png",
@@ -731,10 +743,6 @@
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\js\\google-map.js",
       "PackagePath": "staticwebassets\\js\\google-map.js"
-    },
-    {
-      "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
       "Id": "C:\\Users\\Orange\\Desktop\\Hoodie\\Hoodiee\\Hoodie\\Hoodie\\wwwroot\\js\\stores.js",
