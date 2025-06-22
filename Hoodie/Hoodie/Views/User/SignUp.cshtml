@@ -1,0 +1,60 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- FORM AREA SECTION -->
+<section class="clearfix formArea">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0">
+                <div class="panel panel-default formPart">
+                    <div class="panel-heading patternbg">log in your <span>account</span></div>
+                    <div class="panel-body">
+
+                        @if (TempData["Message"] != null)
+                        {
+                            var message = TempData["Message"].ToString();
+                            var isSuccess = message.Contains("success", StringComparison.OrdinalIgnoreCase);
+
+                            <div class="alert @(isSuccess ? "alert-success" : "alert-danger") text-center mt-3">
+                                @message
+                            </div>
+                        }
+
+                        <form asp-action="HandleSignUp" method="post">
+                            <div class="form-group">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <input name="fname" type="text" class="form-control" id="fname" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <input name="lname" type="text" class="form-control" id="lname" placeholder="Last Name" required>
+                            </div>
+                            <div class="form-group">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <input name="email" type="email" class="form-control" id="email1" placeholder="Email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <input name="phoneNumber" type="text" class="form-control" id="phoneNumber" placeholder="Phone Number" required>
+                            </div>
+
+                            <div class="form-group">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                <input name="password" type="password" class="form-control" id="pwd1" placeholder="Password" required>
+                            </div>
+
+                            <div class="form-group">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                <input name="repeatpassword" type="password" class="form-control" id="pwd2" placeholder="Repeat Password" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Sign UP</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

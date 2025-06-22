@@ -1,0 +1,92 @@
+﻿@model IEnumerable<Hoodie.Models.Product>
+
+@{
+	ViewData["Title"] = "viewProduct";
+	Layout = "~/Views/Shared/Admin_Layout.cshtml";
+}
+
+
+
+<!-- Main Content -->
+<div class="main-content">
+	<div class="container-fluid py-4">
+		<!-- Page Header -->
+		<div class="row mb-4">
+			<div class="col-12">
+				<div class="d-flex justify-content-between align-items-center">
+					<h1 class="h3 mb-0">Product Management</h1>
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb mb-0">
+							<li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Products</li>
+						</ol>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<!-- Product Actions -->
+		<div class="row mb-4">
+			<div class="col-12">
+				<div class="card">
+					<div class="card-body d-flex justify-content-between align-items-center">
+						<div>
+							<a class="btn btn-primary me-2" asp-action="addProduct">
+								<i class="bi bi-plus-circle me-1"></i> Add New Product
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Products Table -->
+		<div class="row">
+			<div class="col-12">
+				<div class="card">
+					<div class="card-header py-3 d-flex justify-content-between align-items-center">
+						<h6 class="m-0 font-weight-bold text-primary">All Products</h6>
+					</div>
+					<div class="card-body">
+						<div class="table-responsive">
+							<table class="table table-hover">
+								<thead class="table-light">
+									<tr>
+										<th>Product</th>
+										<th>Category</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									@foreach (var item in Model)
+									{
+										<tr>
+											<td>
+												<div class="d-flex align-items-center">
+													<img src="@Url.Content("~/Img/img1/" + item.Image)"
+														 alt="Image Offer"
+														 style="width: 10%; height: 10%; object-fit: cover;" />
+													<div>
+														<h6 class="mb-0">@item.Name</h6>
+													</div>
+												</div>		
+											</td>
+											<td>@item.Category?.Name</td>
+											<td>@item.Price JOD</td>
+											<td><span class="badge badge-in-stock">@item.Availability</span></td>
+											<td>
+												<a class="btn btn-danger btn-sm" asp-action="deleteProduct" asp-route-id="@item.ProductId">
+													<i class="bi bi-trash"></i>
+												</a>
+											</td>
+										</tr>
+									}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

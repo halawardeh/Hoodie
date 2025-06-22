@@ -1,0 +1,42 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<div class="alert alert-success" role="alert">
+    Payment completed successfully!
+</div>
+
+<script>
+    setTimeout(function() {
+        // إعادة التوجيه إلى الصفحة الرئيسية بعد 3 ثواني
+        window.location.href = '@Url.Action("Index", "Home")';
+    }, 3000); // 3000ms = 3 seconds
+</script>
+
+
+<style>
+    .payment-success {
+        text-align: center;
+        padding: 50px;
+    }
+
+    .success-icon {
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+    }
+
+    h2 {
+        color: #4CAF50;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 18px;
+        color: #555;
+    }
+</style>

@@ -1,0 +1,98 @@
+﻿@model Product
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = Model.Name;
+
+    var productUrl = Url.Action("Details", "Product", new { id = Model.ProductId }, protocol: "https");
+    var message = $"Check out this amazing product: {Model.Name} - {productUrl}";
+    var whatsappLink = $"https://wa.me/?text={Uri.EscapeDataString(message)}";
+}
+
+<!-- CSS Links -->
+<link href="~/css/ProductDetails.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<div class="product-detail-container">
+    <!-- Product Image Section -->
+    <div class="product-image-section">
+        <img src="~/Img/img1/@Model.Image" alt="@Model.Name" class="main-product-image" />
+    </div>
+
+    <!-- Product Info Section -->
+    <div class="product-info-section">
+        <h1 class="product-title">@Model.Name</h1>
+
+        <div class="product-meta">
+            @if(Model.Availability==true)
+            {
+                <span class="stock-badge in-stock">IN STOCK</span>
+            }
+            else
+            {
+                <span class="stock-badge out-of-stock">OUT OF STOCK</span>
+            }
+            <span class="product-price">@Model.Price JD</span>
+        </div>
+
+        <p class="product-description">@Model.Description</p>
+
+        <!-- Size Selection -->
+        <div class="product-option size-option">
+            <h3 class="option-title">Choose Your Size:</h3>
+            <div class="size-options-grid">
+                @foreach (var size in Model.ProductSizes)
+                {
+                    var isSelected = (ViewBag.SelectedsizeId != null && size.SizeId == (int)ViewBag.SelectedsizeId);
+                    <a asp-action="GetProductBySize"
+                       asp-route-productId="@Model.ProductId"
+                       asp-route-sizeId="@size.SizeId"
+                       class="size-btn @(isSelected ? "selected" : "")">
+                        @size.Size.SizeName
+                    </a>
+                }
+            </div>
+        </div>
+
+        <!-- Color Selection -->
+        <div class="product-option color-option">
+            <h3 class="option-title">Color:</h3>
+            <div class="color-options-grid">
+                @foreach (var color in Model.ProductColors)
+                {
+                    var isSelected = (ViewBag.SelectedColorId != null && color.ColorId == (int)ViewBag.SelectedColorId);
+                    <a asp-action="GetProductByColor"
+                       asp-route-productId="@Model.ProductId"
+                       asp-route-colorId="@color.ColorId"
+                       class="color-btn @(isSelected ? "selected" : "")"
+                       title="@color.Color.Name">
+                        <span style="background-color: @color.Color.HexCode"></span>
+                    </a>
+                }
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <form asp-controller="User" asp-action="Cart" method="post" class="cart-form">
+                <input type="hidden" name="productID" value="@Model.ProductId" />
+                <button type="submit" class="btn primary-btn">
+                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                </button>
+            </form>
+
+            <form asp-controller="User" asp-action="AddToWishlist" method="post" class="wishlist-form">
+                <input type="hidden" name="productID" value="@Model.ProductId" />
+                <button type="submit" class="btn secondary-btn">
+                    <i class="fas fa-heart"></i> Add to Wishlist
+                </button>
+            </form>
+        </div>
+
+        <!-- Social Sharing -->
+        <div class="social-sharing">
+            <a href="@whatsappLink" target="_blank" class="share-btn">
+                <i class="fab fa-whatsapp"></i> Share via WhatsApp
+            </a>
+        </div>
+    </div>
+</div>

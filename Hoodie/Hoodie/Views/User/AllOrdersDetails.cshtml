@@ -1,0 +1,82 @@
+﻿@* @model Hoodie.Models.Order *@
+
+@* @{ *@
+@*     Layout = "~/Views/Shared/_Layout.cshtml"; *@
+@* } *@
+
+@* <div class="container py-5"> *@
+@*     <div class="row justify-content-center"> *@
+@*         <div class="col-lg-8"> *@
+@*             <div class="card shadow-sm"> *@
+@*                 <div class="card-header bg-light"> *@
+@*                     <h2 class="h4 mb-0">Order Details</h2> *@
+@*                 </div> *@
+
+@*                 <div class="card-body"> *@
+@*                     @if (Model != null) *@
+@*                     { *@
+@*                         <div class="order-summary mb-4 p-3 bg-light rounded"> *@
+@*                             <div class="row"> *@
+@*                                 <div class="col-md-6"> *@
+@*                                     <p class="mb-2"><strong>Order Date:</strong> @(Model.OrderDate.HasValue ? Model.OrderDate.Value.ToString("dd/MM/yyyy") : "Not Available")</p> *@
+@*                                 </div> *@
+@*                                 <div class="col-md-6 text-md-right"> *@
+@*                                     <p class="mb-2"><strong>Total Amount:</strong> <span class="text-primary">@((decimal)Model.TotalAmount) JD</span></p> *@
+@*                                 </div> *@
+@*                             </div> *@
+@*                         </div> *@
+
+@*                         <h3 class="h5 mb-3">Order Items</h3> *@
+@*                         <div class="table-responsive"> *@
+@*                             <table class="table table-hover"> *@
+@*                                 <thead class="thead-light"> *@
+@*                                     <tr> *@
+@*                                         <th>Product</th> *@
+@*                                         <th class="text-center">Quantity</th> *@
+@*                                         <th class="text-right">Price</th> *@
+@*                                         <th class="text-right">Total</th> *@
+@*                                     </tr> *@
+@*                                 </thead> *@
+@*                                 <tbody> *@
+@*                                     @foreach (var item in Model.OrderItems) *@
+@*                                     { *@
+@*                                         <tr> *@
+@*                                             <td> *@
+@*                                                 <div class="d-flex align-items-center"> *@
+@*                                                     <a href="single-product.html" class="mr-3"> *@
+@*                                                         <img src="@Url.Content($"~/Img/img1/{item.Product.Image}")" class="img-fluid rounded" width="60" alt="Product Image" /> *@
+@*                                                     </a> *@
+@*                                                     <div> *@
+@*                                                         <h6 class="mb-0">@item.Product.Name</h6> *@
+@*                                                     </div> *@
+@*                                                 </div> *@
+@*                                             </td> *@
+@*                                             <td class="text-center align-middle">@item.Quantity</td> *@
+@*                                             <td class="text-right align-middle">@((decimal)item.Product.Price) JD</td> *@
+@*                                             <td class="text-right align-middle font-weight-bold">@((decimal)item.Product.Price * item.Quantity) JD</td> *@
+@*                                         </tr> *@
+@*                                     } *@
+@*                                 </tbody> *@
+@*                             </table> *@
+@*                         </div> *@
+
+@*                         <div class="mt-4 pt-3 border-top"> *@
+@*                             <form asp-action="CheckoutConfirmation" method="post"> *@
+@*                                 <input type="hidden" name="orderId" value="@Model.OrderId" /> *@
+@*                                 <button type="submit" class="btn btn-primary btn-lg btn-block py-3"> *@
+@*                                     Confirm & Pay *@
+@*                                 </button> *@
+@*                             </form> *@
+@*                         </div> *@
+@*                     } *@
+@*                     else *@
+@*                     { *@
+@*                         <div class="alert alert-danger" role="alert"> *@
+@*                             <i class="fas fa-exclamation-circle mr-2"></i>No order found. *@
+@*                         </div> *@
+@*                     } *@
+@*                 </div> *@
+@*             </div> *@
+@*         </div> *@
+@*     </div> *@
+@* </div> *@

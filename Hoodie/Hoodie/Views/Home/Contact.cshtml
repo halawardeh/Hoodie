@@ -1,0 +1,68 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!-- PAGE TITLE SECTION -->
+<section class="clearfix pageTitleArea" style="background-image: url(https://i.pinimg.com/736x/c6/29/5c/c6295c25d9137140d2590ee2431dd88b.jpg);">
+    <div class="container">
+        <div class="pageTitle">
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTACT US SECTION -->
+<section class="clearfix contactSection padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-7 col-xl-8">
+                <div class="contactTitle">
+                    <h3>Get in touch</h3>
+                </div>
+
+                <div class="contactForm">
+                    <div id="alert"></div><!--Response Holder-->
+                    <form asp-controller="Home" asp-action="Contact" id="angelContactForm" method="post">
+                        <div class="form-group">
+                            <input type="text" name="UserName" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="Email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="PhoneNumber" class="form-control" placeholder="Your Mobile" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="Messagee" placeholder="Your Message" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" id="contact-submit-btn" class="btn btn-primary first-btn">Send Message</button>
+
+                        </div>
+                    </form>
+                    @if (TempData["Message"] != null)
+                    {
+                        <div class="alert alert-success">
+                            @TempData["Message"]
+                        </div>
+                    }
+
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-5 col-xl-4">
+                <div class="holdingInfo patternbg">
+                    <p>Have a question, feedback, or just want to say hello? We're here to help! Reach out to us anytime and our team will get back to you as soon as possible. Your comfort and style matter to us.</p>
+                    <ul>
+                        <li><i class="fa fa-map-marker" aria-hidden="true"></i> You can find our stores all across Irbid City – visit the branch nearest to you!</li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i> +962 150 9970 <br>+962 123 5656</li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:halabanihamad10@gmail.com">hoodies@gmail.com</a> <br><a href="mailto:halabanihamad10@gmail.com">halabanihamad10@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

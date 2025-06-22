@@ -1,0 +1,176 @@
+﻿/* ????? ?????? */
+#banner {
+    position: relative;
+    height: 70vh !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* ???? ?? ?? ??????? ???? ??? ????? */
+}
+a {
+    text-decoration: none;
+    color: inherit; /* أو أي لون ثاني يناسب التصميم */
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh !important; /* ???? ?? ?? ??????? ???? ???????? ??????? */
+    object-fit: cover;
+    z-index: -1; /* ?? ??????? ?? ??????? */
+    filter: brightness(0.7);
+}
+
+.store-search-box {
+    position: relative;
+    z-index: 2; /* ???? ????? ???? ??? ??????? */
+    background: rgba(255, 255, 255, 0.8); /* ????? ????? ????? ???? ????? ?????? ??? ?? ???? ??????? */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0 !important;
+}
+
+/* ????? ?????? */
+.stores-header {
+    background: #ec55982e;
+    text-align: center;
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ????? ???? ????? */
+.store-search-box input {
+    padding: 12px;
+    width: 280px;
+    border: 2px solid #ec5598; /* ????? ????? ??? */
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.store-search-box button {
+    padding: 12px 20px;
+    background: #ec5598; /* ????? ????? ??? */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+    .store-search-box button:hover {
+        background: #d14a84; /* ????? ????? ??? */
+    }
+
+/* ????? ????? ??????? */
+.store-filters {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.store-filter-btn {
+    padding: 12px 25px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(to right, #ec5598, #d14a84); /* ????? ????? ??? */
+    color: white;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+    .store-filter-btn:hover {
+        background: linear-gradient(to right, #d14a84, #ec5598); /* ????? ????? ??? */
+        transform: scale(1.05);
+    }
+
+/* ????? ????? ??????? */
+.stores-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* ????? ?????? ??????? */
+.store-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+    .store-card:hover {
+        transform: scale(1.08);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    /* ????? ?????? ???????? */
+    .store-card h3 {
+        color: #ec5598; /* ????? ????? ??? */
+        margin-top: 10px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .store-card img {
+        width: 100%;
+        height: 180px; /* Fixed height for images */
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .store-card h3 {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+        height: 40px; /* Fixed height for store name */
+        overflow: hidden;
+    }
+
+    .store-card p {
+        font-size: 14px;
+        margin: 5px 0;
+        height: 40px; /* Fixed height for clothing type text */
+        overflow: hidden;
+    }
+
+    .store-card .location {
+        font-size: 14px;
+        font-weight: bold;
+        color: #666;
+        height: 20px; /* Fixed height for location */
+        overflow: hidden;
+    }
+/* ????? ????????? */
+@media (max-width: 768px) {
+    .store-search-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .store-search-box input {
+            width: 100%;
+            max-width: 300px;
+        }
+
+    .store-filter-btn {
+        padding: 10px 20px;
+    }
+}

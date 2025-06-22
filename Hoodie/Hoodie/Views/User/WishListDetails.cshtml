@@ -1,0 +1,67 @@
+﻿@model List<Wishlist>
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="clearfix orderSection padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ul class="list-inline squareBtn">
+					<li class="li"><a asp-controller="User" asp-action="Profile" class="btn btn-common ">Profile</a></li>
+					<li class="li"><a asp-controller="User" asp-action="AllOrders" class="btn btn-common">All Orders</a></li>
+					<li class="li"><a asp-controller="User" asp-action="WishListDetails" class="btn btn-common btn-theme cursor-default">Wishlist</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<div class="panel panel-default cartInfo">
+					<div class="panel-heading patternbg">your Order</div>
+					<div class="panel-body tableArea">
+						<div class="table-responsive">
+							<table class="table">
+								<tbody>
+									@foreach (var item in Model)
+									{
+										<tr>
+											<td>
+												<a href="single-product.html" class="cartImage">
+													<img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="
+														 data-src="@Url.Content($"~/Img/img1/{item.Product.Image}")"
+														 class="lazyestload cartImage"
+														 alt="Image cart" />
+
+												</a>
+											</td>
+											<td><a href="single-product.html">@item.Product.Name</a> <br></td>
+											<td><span class="price">@item.Product.Price JD</span></td>
+											<td>
+												<form asp-controller="User" asp-action="Cart" method="post">
+													<input type="hidden" name="productID" value="@item.ProductId" />
+													<button class="btn btn-common">
+														Add to cart
+													</button>
+												</form>
+											</td>
+
+											<td>
+												<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+													<span aria-hidden="true">×</span>
+												</button>
+											</td>
+										</tr>
+									}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+ </div>
+</section>
+

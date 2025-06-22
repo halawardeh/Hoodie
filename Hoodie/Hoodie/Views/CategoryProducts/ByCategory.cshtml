@@ -1,0 +1,40 @@
+﻿@model List<SubCategory>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<br />
+<br />
+
+<section class="clearfix offersSection patternbg">
+    <div class="secotionTitle">
+        <h2>Our Categories</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            @foreach (var category in Model)
+            {
+                <div class="col-sm-3 col-xs-12">
+                    <div class="offerContent">
+                        <img src="~/Img/img1/@category.Image"
+                             alt="Image Offer"
+                             style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+
+                        <div class="offerMasking">
+                            <div class="offerTitle">
+                                <h4>
+                                    <a asp-controller="CategoryProducts"
+                                       asp-action="BySubCategory"
+                                       asp-route-subcateoryID="@category.Id">
+                                        @category.Name
+                                    </a>
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

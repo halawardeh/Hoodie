@@ -1,0 +1,361 @@
+﻿@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- OFFERS SECTION -->
+<section class="clearfix offersSection patternbg">
+    <div class="secotionTitle">
+        <h2>Welcome to Smile Store</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-xs-12">
+                <div class="offerContent">
+                    <img class="lazyestload" src="https://i.pinimg.com/736x/c1/48/b6/c148b650d135d02291166c34c0486cb8.jpg" data-src="https://i.pinimg.com/736x/c1/48/b6/c148b650d135d02291166c34c0486cb8.jpg" alt="Image Offer">
+                    <div class="offerMasking">
+                        <div class="offerTitle"><h4><a href="#">Boys</a></h4></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+                <div class="offerContent">
+                    <img class="lazyestload" data-src="https://i.pinimg.com/736x/8d/79/45/8d794554aa43a82c99d69eb908372422.jpg" src="https://i.pinimg.com/736x/8d/79/45/8d794554aa43a82c99d69eb908372422.jpg" alt="Image Offer">
+                    <div class="offerMasking">
+                        <div class="offerTitle"><h4><a href="#">Girls</a></h4></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+                <div class="offerContent">
+                    <img class="lazyestload" src="https://i.pinimg.com/736x/72/68/e2/7268e29217a0999e484bbcbd9d2a5112.jpg" data-src="https://i.pinimg.com/736x/72/68/e2/7268e29217a0999e484bbcbd9d2a5112.jpg" alt="Image Offer">
+                    <div class="offerMasking">
+                        <div class="offerTitle">
+                            <h4>
+                                <a href="#">
+                                    Infants
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-xs-12">
+                <div class="offerContent">
+                    <img class="lazyestload" src="https://i.pinimg.com/736x/41/5c/08/415c08ac61819f2cf2856deda7aafc3f.jpg" data-src="https://i.pinimg.com/736x/41/5c/08/415c08ac61819f2cf2856deda7aafc3f.jpg" alt="Image Offer">
+                    <div class="offerMasking">
+                        <div class="offerTitle"><h4><a href="#">Seasonal</a></h4></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+</section>
+
+<!-- RELATED PRODUCT SECTION -->
+<section class="clearfix relatedProduct">
+    <div class="container">
+        <div class="relatedTitle text-center mb-4">
+            <h2>Kids Collection</h2>
+        </div>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card shadow-sm h-100">
+                    <a href="single-product.html">
+                        <img src="https://i.pinimg.com/736x/25/3f/0e/253f0ee9f446b6d4c822025ff173afd0.jpg"
+                             alt="Kids Hoodie"
+                             class="card-img-top img-fluid"
+                             style="height: 250px; object-fit: cover;">
+                    </a>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-center">Kids Hoodie</h5>
+                        <p class="card-text text-center text-muted" style="font-size: 14px;">Warm & Stylish</p>
+                        <div class="text-center mb-3">
+                            <strong>$15</strong>
+                        </div>
+                        <div class="d-flex gap-2" style="justify-content:space-between !important">
+                            <form asp-controller="User" asp-action="Cart" method="post">
+                                <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.49-.402L1.61 3.607 1.28 2H.5a.5.5 0 0 1-.5-.5zM3.14 4l1.25 5h8.22l1.25-5H3.14z" />
+                                        <path d="M5.5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                    </svg>
+                                </button>
+                            </form>
+
+                            <form asp-controller="User" asp-action="AddToWishlist" method="post">
+                                <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card shadow-sm h-100">
+                    <a href="single-product.html">
+                        <img src="https://i.pinimg.com/736x/65/df/2c/65df2cbf5ea559f8c310c330351c401d.jpg"
+                             alt="Kids Jacket"
+                             class="card-img-top img-fluid"
+                             style="height: 250px; object-fit: cover;">
+                    </a>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-center">Kids Jacket</h5>
+                        <p class="card-text text-center text-muted" style="font-size: 14px;">Cozy for winter</p>
+                        <div class="text-center mb-3">
+                            <strong>$20</strong>
+                        </div>
+                        <div class="d-flex gap-2" style="justify-content:space-between !important">
+                            <form asp-controller="User" asp-action="Cart" method="post">
+                                <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.49-.402L1.61 3.607 1.28 2H.5a.5.5 0 0 1-.5-.5zM3.14 4l1.25 5h8.22l1.25-5H3.14z" />
+                                        <path d="M5.5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                    </svg>
+                                </button>
+                            </form>
+
+                            <form asp-controller="User" asp-action="AddToWishlist" method="post">
+                                <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card shadow-sm h-100">
+                    <a href="single-product.html">
+                        <img src="https://i.pinimg.com/736x/5d/8d/3b/5d8d3b855f419fcc8e9e2f5e906c3d48.jpg"
+                             alt="Kids T-Shirt"
+                             class="card-img-top img-fluid"
+                             style="height: 250px; object-fit: cover;">
+                    </a>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-center">Kids T-Shirt</h5>
+                        <p class="card-text text-center text-muted" style="font-size: 14px;">Light & comfy</p>
+                        <div class="text-center mb-3">
+                            <strong>$10</strong>
+                        </div>
+                        <div class="d-flex gap-2" style="justify-content:space-between !important">
+                            <form asp-controller="User" asp-action="Cart" method="post">
+                                <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.49-.402L1.61 3.607 1.28 2H.5a.5.5 0 0 1-.5-.5zM3.14 4l1.25 5h8.22l1.25-5H3.14z" />
+                                        <path d="M5.5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                    </svg>
+                                </button>
+                            </form>
+
+                            <form asp-controller="User" asp-action="AddToWishlist" method="post">
+                                <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card shadow-sm h-100">
+                    <a href="single-product.html">
+                        <img src="https://i.pinimg.com/736x/87/90/54/879054d44c3aed3d582cdd37ba1b5387.jpg"
+                             alt="Kids Outfit Set"
+                             class="card-img-top img-fluid"
+                             style="height: 250px; object-fit: cover;">
+                    </a>
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title text-center">Kids Outfit Set</h5>
+                        <p class="card-text text-center text-muted" style="font-size: 14px;">Full look package</p>
+                        <div class="text-center mb-3">
+                            <strong>$25</strong>
+                        </div>
+                        <div class="d-flex gap-2" style="justify-content:space-between !important">
+                            <form asp-controller="User" asp-action="Cart" method="post">
+                                <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.49-.402L1.61 3.607 1.28 2H.5a.5.5 0 0 1-.5-.5zM3.14 4l1.25 5h8.22l1.25-5H3.14z" />
+                                        <path d="M5.5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                    </svg>
+                                </button>
+                            </form>
+
+                            <form asp-controller="User" asp-action="AddToWishlist" method="post">
+                                <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                        <path d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Product 4 -->
+        <div class="row">
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card shadow-sm h-100">
+                <a href="single-product.html">
+                    <img src="https://i.pinimg.com/736x/df/5d/49/df5d497794fc447f6f7f8dec9f3c7610.jpg"
+                         alt="Kids Sweatshirt"
+                         class="card-img-top img-fluid"
+                         style="height: 250px; object-fit: cover;">
+                </a>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-center">Kids Sweatshirt</h5>
+                    <p class="card-text text-center text-muted" style="font-size: 14px;">Soft & colorful</p>
+                    <div class="text-center mb-3">
+                        <strong>$12</strong>
+                    </div>
+                    <div class="d-flex gap-2" style="justify-content:space-between !important">
+                        <form asp-controller="User" asp-action="Cart" method="post">
+                            <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.49-.402L1.61 3.607 1.28 2H.5a.5.5 0 0 1-.5-.5zM3.14 4l1.25 5h8.22l1.25-5H3.14z" />
+                                    <path d="M5.5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg>
+                            </button>
+                        </form>
+
+                        <form asp-controller="User" asp-action="AddToWishlist" method="post">
+                            <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card shadow-sm h-100">
+                <a href="single-product.html">
+                    <img src="https://i.pinimg.com/736x/39/09/ac/3909ac8a4d30dfb6c9ce76e406691a65.jpg"
+                         alt="Kids Pants"
+                         class="card-img-top img-fluid"
+                         style="height: 250px; object-fit: cover;">
+                </a>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-center">Kids Pants</h5>
+                    <p class="card-text text-center text-muted" style="font-size: 14px;">Stretchy & Durable</p>
+                    <div class="text-center mb-3">
+                        <strong>$13</strong>
+                    </div>
+                    <div class="d-flex gap-2" style="justify-content:space-between !important">
+                        <form asp-controller="User" asp-action="Cart" method="post">
+                            <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.49-.402L1.61 3.607 1.28 2H.5a.5.5 0 0 1-.5-.5zM3.14 4l1.25 5h8.22l1.25-5H3.14z" />
+                                    <path d="M5.5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg>
+                            </button>
+                        </form>
+
+                        <form asp-controller="User" asp-action="AddToWishlist" method="post">
+                            <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card shadow-sm h-100">
+                <a href="single-product.html">
+                    <img src="https://i.pinimg.com/736x/66/77/c5/6677c5baabadff7d59789946032d11b3.jpg"
+                         alt="Kids Pajamas"
+                         class="card-img-top img-fluid"
+                         style="height: 250px; object-fit: cover;">
+                </a>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-center">Kids Pajamas</h5>
+                    <p class="card-text text-center text-muted" style="font-size: 14px;">Cute & Comfy</p>
+                    <div class="text-center mb-3">
+                        <strong>$11</strong>
+                    </div>
+                    <div class="d-flex gap-2" style="justify-content:space-between !important">
+                        <form asp-controller="User" asp-action="Cart" method="post">
+                            <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.49-.402L1.61 3.607 1.28 2H.5a.5.5 0 0 1-.5-.5zM3.14 4l1.25 5h8.22l1.25-5H3.14z" />
+                                    <path d="M5.5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg>
+                            </button>
+                        </form>
+
+                        <form asp-controller="User" asp-action="AddToWishlist" method="post">
+                            <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="card shadow-sm h-100">
+                <a href="single-product.html">
+                    <img src="https://i.pinimg.com/736x/05/29/4f/05294ff829116ead4c0d1a3e0e579ab1.jpg"
+                         alt="Kids Dress"
+                         class="card-img-top img-fluid"
+                         style="height: 250px; object-fit: cover;">
+                </a>
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title text-center">Kids Dress</h5>
+                    <p class="card-text text-center text-muted" style="font-size: 14px;">Elegant & Light</p>
+                    <div class="text-center mb-3">
+                        <strong>$17</strong>
+                    </div>
+                    <div class="d-flex gap-2" style="justify-content:space-between !important">
+                        <form asp-controller="User" asp-action="Cart" method="post">
+                            <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.49-.402L1.61 3.607 1.28 2H.5a.5.5 0 0 1-.5-.5zM3.14 4l1.25 5h8.22l1.25-5H3.14z" />
+                                    <path d="M5.5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                </svg>
+                            </button>
+                        </form>
+
+                        <form asp-controller="User" asp-action="AddToWishlist" method="post">
+                            <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div></div>
+
+    </div>
+</section>

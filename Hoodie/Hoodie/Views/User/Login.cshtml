@@ -1,0 +1,41 @@
+﻿@model Hoodie.Models.User
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- FORM AREA SECTION -->
+<section class="clearfix formArea">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0">
+                <div class="panel panel-default formPart">
+                    <div class="panel-heading patternbg">log in your <span>account</span></div>
+                    <div class="panel-body">
+                        @if (TempData["Message"] != null)
+                        {
+                            <div class="alert alert-danger">
+                                @TempData["Message"]
+                            </div>
+                        }
+
+                        <form asp-action="handleLogin">
+                            <div class="form-group">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <input name="email" type="text" class="form-control"  placeholder="Email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <i class="fa fa-lock" aria-hidden="true"></i>
+                                <input name="password" type="text" class="form-control" placeholder="Password"  required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                            <p>
+                                <a class="nav-link" asp-controller="User" asp-action="SignUp">Don't have an account? Sign up</a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

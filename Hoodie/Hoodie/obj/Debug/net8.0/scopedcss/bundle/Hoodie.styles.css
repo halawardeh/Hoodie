@@ -1,0 +1,177 @@
+/* _content/Hoodie/Views/Shared/Admin_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+i[b-tqntvy53o1] {
+    margin-right: 10px;
+}
+
+/* Navbar Styling */
+.navbar-logo[b-tqntvy53o1] {
+    padding: 15px;
+    color: #3E433B;
+    font-family: "League Script", serif;
+    font-weight: 960;
+}
+
+.navbar-mainbg[b-tqntvy53o1] {
+    background-color: #F5EFE7;
+    padding: 0px;
+}
+
+#navbarSupportedContent[b-tqntvy53o1] {
+    overflow: hidden;
+    position: relative;
+}
+
+    #navbarSupportedContent ul[b-tqntvy53o1] {
+        padding: 0px;
+        margin: 0px;
+    }
+
+        #navbarSupportedContent ul li a[b-tqntvy53o1] {
+            color: #3E433B;
+            text-decoration: none;
+            font-size: 15px;
+            display: block;
+            padding: 20px 20px;
+            transition-duration: 0.6s;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            position: relative;
+        }
+
+    #navbarSupportedContent > ul > li.active > a[b-tqntvy53o1] {
+        color: #3E433B;
+        background-color: transparent;
+        transition: all 0.7s;
+    }
+
+    #navbarSupportedContent a:not(:only-child)[b-tqntvy53o1]:after {
+        content: "\f105";
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 14px;
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        padding-right: 3px;
+        vertical-align: middle;
+        font-weight: 900;
+        transition: 0.5s;
+    }
+
+    #navbarSupportedContent .active > a:not(:only-child)[b-tqntvy53o1]:after {
+        transform: rotate(90deg);
+    }
+
+.hori-selector[b-tqntvy53o1] {
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    transition-duration: 0.6s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-color: #F6F4F0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 10px;
+}
+
+    .hori-selector .right[b-tqntvy53o1],
+    .hori-selector .left[b-tqntvy53o1] {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background-color: #F6F4F0;
+        bottom: 10px;
+    }
+
+    .hori-selector .right[b-tqntvy53o1] {
+        right: -25px;
+    }
+
+    .hori-selector .left[b-tqntvy53o1] {
+        left: -25px;
+    }
+
+        .hori-selector .right[b-tqntvy53o1]:before,
+        .hori-selector .left[b-tqntvy53o1]:before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #F5EFE7;
+        }
+
+    .hori-selector .right[b-tqntvy53o1]:before {
+        bottom: 0;
+        right: -25px;
+    }
+
+    .hori-selector .left[b-tqntvy53o1]:before {
+        bottom: 0;
+        left: -25px;
+    }
+
+
+.footerContainer[b-tqntvy53o1] {
+    background-color: #5F6759 !important;
+    color: #F6F4F0;
+    height: 275px !important;
+}
+
+    .footerContainer a[b-tqntvy53o1] {
+        color: #F6F4F0;
+        text-decoration: none;
+    }
+/* _content/Hoodie/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-deotztngdv] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-deotztngdv] {
+  color: #0077cc;
+}
+
+.btn-primary[b-deotztngdv] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-deotztngdv], .nav-pills .show > .nav-link[b-deotztngdv] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-deotztngdv] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-deotztngdv] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-deotztngdv] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-deotztngdv] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-deotztngdv] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}

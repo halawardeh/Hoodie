@@ -1,0 +1,66 @@
+﻿@model List<Order>
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	int counter = 1;
+
+
+}
+
+<section class="clearfix userSection padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<ul class="list-inline squareBtn">
+					<li class="li"><a asp-controller="User" asp-action="Profile" class="btn btn-common btn-theme cursor-default">Profile</a></li>
+					<li class="li"><a asp-controller="User" asp-action="AllOrders" class="btn btn-common">All Orders</a></li>
+					<li class="li"><a asp-controller="User" asp-action="WishListDetails" class="btn btn-common">Wishlist</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				<div class="innerWrapper">
+					<div class="orderBox  patternbg">
+						All Order
+					</div>
+
+					<div class="table-responsive">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Order ID</th>
+									<th>Date</th>
+									<th>Total Price</th>
+									<th></th>
+								</tr>
+							</thead>
+
+							<tbody>
+								@foreach (var item in Model)
+								{
+
+									<tr>
+										<td>@counter</td>
+										<td>@item.OrderDate</td>
+										<td>
+											@(item.OrderItems.Sum(i => i.Quantity * i.Product.Price)) JD
+										</td>
+										<td>
+											<a asp-controller="User" asp-action="OrderDetails" asp-route-orderId="@item.OrderId" class="btn btn-default">View</a>
+										</td>
+									</tr>
+
+									counter++;
+								}
+
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	@counter=1;
+</section>

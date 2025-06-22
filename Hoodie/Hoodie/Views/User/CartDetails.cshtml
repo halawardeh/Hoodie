@@ -1,0 +1,132 @@
+﻿@model List<Cart>
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+	decimal TotalPrice = 0;
+}
+<!-- ORDER SECTION -->
+<section class="clearfix orderArea">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+				<div class="panel panel-default cartInfo">
+					<div class="panel-heading patternbg">your Order</div>
+					<div class="panel-body tableArea mb-4 mb-lg-0">
+						<div>
+							<table class="table">
+								<tbody>
+									@foreach (var item in Model)
+									{
+										TotalPrice += (decimal)(item.Product.Price ?? 0) * (item.Quantity ?? 0);
+										<tr>
+											<td>
+												<a href="single-product.html" class="cartImage">
+													<img src="@Url.Content($"~/Img/img1/{item.Product.Image}")" class="cartImage" alt="Image cart" />
+												</a>
+											</td>
+											<td><a class="text-wrap" href="single-product.html">@item.Product.Name</a></td>
+											<td><span class="price">@((item.Product.Price * item.Quantity)) JD</span></td>
+											<td>
+												<form asp-action="UpdateQuantity" method="post" style="display: flex; align-items: center; gap: 4px;">
+													<input type="hidden" name="userId" value="@item.UserId" />
+													<input type="hidden" name="productId" value="@item.ProductId" />
+
+													<button type="submit" name="actionType" value="decrease" class="btn btn-secondary"
+															style="width: 24px; height: 24px; font-size: 12px; padding: 0;">
+														-
+													</button>
+
+													<input type="number" name="quantity" value="@item.Quantity" min="1"
+														   style="width: 32px; height: 24px; font-size: 12px; text-align: center; padding: 0;" />
+
+													<button type="submit" name="actionType" value="increase" class="btn btn-secondary"
+															style="width: 24px; height: 24px; font-size: 12px; padding: 0;">
+														+
+													</button>
+												</form>
+											</td>
+
+											<td>
+												<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+													<span aria-hidden="true" class="hidden-xs">×</span>
+												</button>
+											</td>
+										</tr>
+									}
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4">
+				<div class="panel panel-default cartInfo">
+					<div class="panel-heading patternbg">Total <span class="pull-right">@TotalPrice JD</span></div>
+					<div class="panel-body">
+						<p>Click on a coupon code to apply</p>
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Apply Coupon Code" aria-describedby="basic-addon221" required>
+							<button type="submit" class="input-group-addon" id="basic-addon221">Submit</button>
+						</div>
+						<div class="col-lg-offset-10 col-xl-2 col-offset-9 col-md-3">
+							<a asp-action="Checkout" class="btn btn-primary btn-block">Checkout</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- RELATED PRODUCT SECTION -->
+@* <section class="clearfix relatedProduct"> *@
+@* 	<div class="container"> *@
+@* 		<div class="relatedTitle"> *@
+@* 			<h2>Related Products</h2> *@
+@* 		</div> *@
+
+@* 		<div class="row"> *@
+@* 			<div class="col-md-6 col-lg-3"> *@
+@* 				<a href="single-product.html" class="realatedInner"> *@
+@* 					<div class="productBox"> *@
+@* 						<img src="~/Img/products/related-product-1.jpg" data-src="~/Img/products/related-product-1.jpg" alt="Image Product" class="img-responsive lazyestload"> *@
+@* 					</div> *@
+@* 					<div class="productName">Oil Set</div> *@
+@* 					<div class="productPrice">$15</div> *@
+@* 				</a> *@
+@* 			</div> *@
+
+@* 			<div class="col-md-6 col-lg-3"> *@
+@* 				<a href="single-product.html" class="realatedInner"> *@
+@* 					<div class="productBox"> *@
+@* 						<img src="~/Img/products/related-product-1.jpg" data-src="~/Img/products/related-product-1.jpg" alt="Image Product" class="img-responsive lazyestload"> *@
+@* 					</div> *@
+@* 					<div class="productName">Herbal Body Cream</div> *@
+@* 					<div class="productPrice">$50</div> *@
+@* 				</a> *@
+@* 			</div> *@
+
+@* 			<div class="col-md-6 col-lg-3"> *@
+@* 				<a href="single-product.html" class="realatedInner"> *@
+@* 					<div class="productBox"> *@
+@* 						<img src="~/Img/products/related-product-2.jpg" data-src="img/products/related-product-3.jpg" alt="Image Product" class="img-responsive lazyestload"> *@
+@* 					</div> *@
+@* 					<div class="productName">Flying Ninja</div> *@
+@* 					<div class="productPrice">$75</div> *@
+@* 				</a> *@
+@* 			</div> *@
+
+@* 			<div class="col-md-6 col-lg-3"> *@
+@* 				<a href="single-product.html" class="realatedInner"> *@
+@* 					<div class="productBox"> *@
+@* 						<img src="~/Img/products/related-product-3.jpg" data-src="img/products/related-product-4.jpg" alt="Image Product" class="img-responsive lazyestload"> *@
+@* 					</div> *@
+@* 					<div class="productName">Ninja Silhouette</div> *@
+@* 					<div class="productPrice">$35</div> *@
+@* 				</a> *@
+@* 			</div> *@
+@* 		</div> *@
+@* 	</div> *@
+@* </section> *@

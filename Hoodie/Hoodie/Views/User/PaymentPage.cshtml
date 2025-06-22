@@ -1,0 +1,152 @@
+﻿@model Order
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- CHECK OUT SECTION -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card shadow-sm border-0">
+                    <div class="card-header text-white">
+                        <h4 class="mb-0"><i class="fas fa-credit-card mr-2"></i>Payment Information</h4>
+                    </div>
+
+                    <form method="post" asp-action="PaymentPagePost" class="needs-validation" novalidate>
+                        <input type="hidden" name="OrderId" value="@Model.OrderId" />
+
+                        <div class="card-body">
+                            <div class="alert alert-info">
+                                Please enter your payment details securely
+                            </div>
+
+                            <!-- Card Number -->
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 col-form-label text-md-right" for="number">
+                                    Card Number <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-md-7">
+                                    <div class="input-group">
+                                        <input type="text" name="CardNumber" class="form-control" id="number"
+                                               placeholder="1234 5678 9012 3456" pattern="[\d\s]{16,19}"
+                                               maxlength="19" required>
+                                        
+                                    </div>
+                                    <small class="form-text text-muted">Enter 16-digit card number without dashes</small>
+                                    <div class="invalid-feedback">Please enter a valid card number</div>
+                                </div>
+                            </div>
+
+                            <!-- Expiry Date -->
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 col-form-label text-md-right" for="expiry">
+                                    Expiration Date <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" id="expiry" name="ExpiryDate"
+                                           placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/(2[3-9]|[3-9][0-9])"
+                                           title="MM/YY format with year 2023 or later" maxlength="5" required>
+                                    <div class="invalid-feedback">Please enter valid expiration date (MM/YY)</div>
+                                </div>
+                            </div>
+
+                            <!-- Security Code -->
+                            <div class="form-group row align-items-center">
+                                <label class="col-md-3 col-form-label text-md-right" for="cvcnumber">
+                                    Security Code <span class="text-danger">*</span>
+                                </label>
+                                <div class="col-md-7">
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" id="cvcnumber" name="CVC"
+                                               placeholder="•••" maxlength="4" pattern="\d{3,4}" required>
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary toggle-cvc" type="button">
+                                                <i class="fas fa-eye"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <small class="form-text text-muted">3 or 4 digits on back of card</small>
+                                    <div class="invalid-feedback">Please enter valid security code</div>
+                                </div>
+                            </div>
+
+                            <!-- Order Summary -->
+                            <div class="border-top pt-3 mt-4">
+                                <h5 class="mb-3"><i class="fas fa-receipt mr-2"></i>Order Summary</h5>
+                              
+                                <div class="d-flex justify-content-between font-weight-bold h5">
+                                    <span>Total:</span>
+                                    <span class="text-primary">@(string.Format("{0:0.00}", Model.TotalAmount)) JD</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-footer bg-white border-top-0 pt-0">
+                            <div class="row justify-content-center">
+                                <!-- تغيير هنا -->
+                                <div class="col-md-8 text-center">
+                                    <!-- تعديل العرض وإضافة text-center -->
+                                    <button type="submit" class="btn btn-primary py-3 px-5">
+                                        <!-- تعديل الزر -->
+                                       Complete Payment
+                                    </button>
+                                    <p class="text-center small mt-2 mb-0">
+                                        Your payment is secured with 256-bit encryption
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        // Form validation
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+
+        // Format card number
+        document.getElementById('number').addEventListener('input', function(e) {
+            e.target.value = e.target.value.replace(/[^\d]/g, '').replace(/(.{4})/g, '$1 ').trim();
+        });
+
+        // Format expiry date
+        document.getElementById('expiry').addEventListener('input', function(e) {
+            e.target.value = e.target.value
+                .replace(/[^\d]/g, '')
+                .replace(/(\d{2})(\d)/, '$1/$2')
+                .substring(0, 5);
+        });
+
+        // Toggle CVC visibility
+        document.querySelector('.toggle-cvc').addEventListener('click', function() {
+            const cvcInput = document.getElementById('cvcnumber');
+            const icon = this.querySelector('i');
+            if (cvcInput.type === 'password') {
+                cvcInput.type = 'text';
+                icon.classList.replace('fa-eye', 'fa-eye-slash');
+            } else {
+                cvcInput.type = 'password';
+                icon.classList.replace('fa-eye-slash', 'fa-eye');
+            }
+        });
+    </script>
+}

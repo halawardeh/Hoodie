@@ -1,0 +1,56 @@
+﻿@model List<Hoodie.Models.Product>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-center my-4">Products in this Category</h2>
+
+<!-- RELATED PRODUCT SECTION -->
+<section class="clearfix relatedProduct">
+    <div class="container">
+        <div class="row">
+            @foreach (var product in Model)
+            {
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card shadow-sm h-100">
+                        <a asp-action="ProductDetails" asp-route-id="@product.ProductId">
+                            <img src="~/Img/img1/CategoriesImages/Men category/@product.Image"
+                                 alt="Product Image"
+                                 class="card-img-top img-fluid"
+                                 style="height: 250px; object-fit: cover;">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title text-center">@product.Name</h5>
+                            <p class="card-text text-center text-muted" style="font-size: 14px;">@product.Description</p>
+                            <div class="text-center mb-3">
+                                <strong>@product.Price</strong>
+                            </div>
+                         
+                            <div class="d-flex gap-2" style="justify-content:space-between !important">
+                                <form asp-controller="User" asp-action="Cart" method="post">
+                                    <input type="hidden" name="productID" value="@product.ProductId" />
+                                    <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+                                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1.5 7A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.49-.402L1.61 3.607 1.28 2H.5a.5.5 0 0 1-.5-.5zM3.14 4l1.25 5h8.22l1.25-5H3.14z" />
+                                            <path d="M5.5 12a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 1a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+                                        </svg>
+                                    </button>
+                                </form>
+
+                                <form asp-controller="User" asp-action="AddToWishlist" method="post">
+                                    <input type="hidden" name="productID" value="@product.ProductId" />
+                                    <button type="submit" class="btn" style="background-color: #ec5598; width: 6vw; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                            <path d="M4.03553 1C1.80677 1 0 2.80677 0 5.03553C0 6.10582 0.42517 7.13228 1.18198 7.88909L7.14645 13.8536C7.34171 14.0488 7.65829 14.0488 7.85355 13.8536L13.818 7.88909C14.5748 7.13228 15 6.10582 15 5.03553C15 2.80677 13.1932 1 10.9645 1C9.89418 1 8.86772 1.42517 8.11091 2.18198L7.5 2.79289L6.88909 2.18198C6.13228 1.42517 5.10582 1 4.03553 1Z" />
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

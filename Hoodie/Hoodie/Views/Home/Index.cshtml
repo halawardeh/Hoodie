@@ -1,0 +1,236 @@
+﻿@model List<Category>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!-- MAIN SLIDER -->
+<section class="main-slider" data-loop="true" data-autoplay="true" data-interval="7000">
+    <div class="inner">
+
+        <!-- Slide One -->
+        <div class="slide slideResize slide1" style="background-image: url(https://images.pexels.com/photos/8387146/pexels-photo-8387146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
+            <div class="container">
+                <div class="slide-inner1 common-inner">
+                    <span class="h1 from-bottom">Welcome to Hoodie</span><br>
+                    <span class="h4 from-bottom">The best place of Mindfullness & Healthy body</span><br>
+                    <a href="javascript:void(0)" class="btn btn-primary first-btn waves-effect waves-light scale-up">More Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide Two -->
+        <div class="slide slideResize slide2" style="background-image: url(https://images.pexels.com/photos/8387808/pexels-photo-8387808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
+            <div class="container">
+                <div class="slide-inner2 common-inner">
+                    <span class="h1 from-bottom">Your Best Store</span><br>
+                    <span class="h4 from-bottom">We provide best Matirail of clothes</span><br>
+                    <a href="javascript:void(0)" class="btn btn-primary first-btn waves-effect waves-light scale-up">More Details</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide Three -->
+        <div class="slide slideResize slide3" style="background-image: url(https://images.pexels.com/photos/8387822/pexels-photo-8387822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
+            <div class="container">
+                <div class="common-inner slide-inner3">
+                    <img src="img/favicon.png" alt="Logo Icon" class="img-responsive">
+                    <span class="h1 from-bottom">luxury spa resort</span><br>
+                    <span class="h4 from-bottom">The real place of Mindfullness & Healthy body</span><br>
+                    <a href="cart.html" class="btn btn-primary first-btn waves-effect waves-light scale-up">Buy Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide Four -->
+        <div class="slide slideResize slide4" style="background-image: url(https://images.pexels.com/photos/5705482/pexels-photo-5705482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);">
+            <div class="container">
+                <div class="common-inner slide-inner4">
+                    <span class="h1 from-bottom">Most Beautiful Theme</span><br>
+                    <span class="h4 from-bottom">Angel is a beautiful theme and easy to customize</span><br>
+                    <a href="javascript:void(0)" class="btn btn-primary first-btn waves-effect waves-light scale-up">More Details</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Categories SECTION -->
+<section class="clearfix offersSection patternbg">
+    <div class="secotionTitle">
+        <h2>Our Categories</h2>
+    </div>
+    <div class="container">
+        <div class="row">
+            @foreach (var category in Model){
+                <div class="col-sm-3 col-xs-12">
+                    <div class="offerContent">
+                        <img src="~/Img/img1/@category.Image"
+                             data-ng-src="~/Img/img1/@category.Image"
+                             alt="Image Offer"
+                             style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                        <div class="offerMasking">
+                            <div class="offerTitle">
+                                <h4>
+                                    <a asp-controller="CategoryProducts" asp-action="ByCategory" asp-route-categoryId="@category.CategoryId">
+                                        @category.Name
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+
+<!-- HOME GALLERY SECTION -->
+<section>
+    <div class="clearfix homeGalleryTitle">
+        <div class="container">
+            <div class="secotionTitle">
+                <h2><span>Explore </span>Man Category</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="row isotopeContainer" id="container">
+        <div class="col-sm-3 isotopeSelector makeup">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=600" src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+                    <div class="overlay-content">
+                        <a href="" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 isotopeSelector makeup">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=600" src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+                    <div class="overlay-content">
+                        <a href="" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 isotopeSelector massage">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image">
+                    <div class="overlay-content">
+                        <a href="" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 isotopeSelector hair">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image">
+                    <div class="overlay-content">
+                        <a href="" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 isotopeSelector makeup">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" src="https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image">
+                    <div class="overlay-content">
+                        <a href="" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 isotopeSelector facial">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Image">
+                    <div class="overlay-content">
+                        <a href="" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 isotopeSelector facial">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=600" src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+                    <div class="overlay-content">
+                        <a href="" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-3 isotopeSelector facial">
+            <div class="card">
+                <div class="card-img">
+                    <img class="img-full lazyestload" data-src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=600" src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image">
+                    <div class="overlay-content">
+                        <a href="" data-fancybox="images">
+                            <h5><i class="fa fa-plus" aria-hidden="true"></i> </h5>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="container-fluid clearfix aboutSection patternbg">
+    <div class="aboutInner">
+        <div class="sepcialContainer">
+            <div class="row">
+                <div class="col-sm-6 col-xs-12 rightPadding">
+                    <div class="imagebox ">
+                        <img class="img-responsive lazyestload" data-src="https://images.pexels.com/photos/9218414/pexels-photo-9218414.jpeg?auto=compress&cs=tinysrgb&w=600" src="https://images.pexels.com/photos/9218414/pexels-photo-9218414.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Image About">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="aboutInfo">
+                        <h2>
+                            Hoodie – Fashion for Everyone
+
+                        </h2>
+                        <h3>
+                            Welcome to Hoodie, your ultimate destination for all things fashion! We offer a diverse collection of clothing for men, women, and kids—ranging from casual essentials to elegant formal wear. Whether you're looking for trendy streetwear, timeless classics, or the latest fashion statements, Hoodie has it all.
+
+                            Our carefully curated selection ensures high-quality fabrics, stylish designs, and comfort for every occasion. Elevate your wardrobe and express your unique style with Hoodie!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<br /><br /><br />
